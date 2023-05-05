@@ -1,0 +1,226 @@
+.container {
+  width: 100%;
+  padding: 0 1rem;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include mediaMin(sm) {
+    max-width: 540px;
+  }
+
+  @include mediaMin(md) {
+    max-width: 720px;
+  }
+
+  @include mediaMin(lg) {
+    max-width: 960px;
+  }
+
+  @include mediaMin(xl) {
+    max-width: 1140px;
+  }
+
+  @include mediaMin(xxl) {
+    max-width: 1320px;
+  }
+}
+
+.sanitizerStyles {
+
+  & p *,
+  & p {
+    @extend .is-size-3;
+  }
+
+  small {
+    @extend .is-size-4;
+  }
+
+  & h1 *,
+  & h1 {
+    @extend .fs-1;
+  }
+
+  & h2 *,
+  & h2 {
+    @extend .fs-2;
+  }
+
+  & h3 {
+    @extend .fs-3 !optional;
+  }
+
+  & h4 {
+    @extend .fs-4 !optional;
+  }
+
+  & h5 {
+    @extend .fs-5 !optional;
+  }
+
+  & h6 {
+    @extend .fs-6 !optional;
+  }
+
+  & img {
+    width: 100%;
+  }
+
+  & a {
+    color: $purple-1;
+
+    &:hover {
+      color: $yellow-p1;
+    }
+  }
+
+  & table {
+    & tbody {
+      & tr {
+        border: 1px solid black;
+        padding: 0.3rem 0.3rem;
+      }
+
+      & td {
+        border: 1px solid black;
+        padding: 0.3rem 0.3rem;
+      }
+    }
+  }
+
+  & img {
+    width: 100% !important;
+  }
+}
+
+.bg-video video {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+}
+
+
+/* Separator and sectionTitle  */
+
+.separator {
+  height: 1.5rem;
+  width: 40%;
+
+  &.is-red {
+    background-color: $red-2;
+  }
+
+  &.is-green {
+    background-color: $green-1;
+  }
+
+  &.is-yellow {
+    background-color: $yellow-3;
+  }
+
+  &.is-blue {
+    background-color: $blue-ee;
+  }
+
+  @include mediaMax(sm) {
+    width: 100%;
+  }
+}
+
+.section {
+  padding: 3rem 0;
+  position: relative;
+
+  &Title {
+    &.white-title {
+      color: $white;
+    }
+
+    &.black-title {
+      color: $black-2;
+    }
+
+    padding-bottom: 0.5rem;
+
+    @extend .fs-5;
+    @extend .text-upperCase;
+  }
+
+  & hr {
+    position: absolute;
+    width: 82px;
+    height: 5px;
+    border: 0;
+
+    &.is-red {
+      background-color: $red-3;
+    }
+
+    &.is-green {
+      background-color: $green-1;
+    }
+
+    &.is-yellow {
+      background-color: $yellow-3;
+    }
+
+    &.is-blue {
+      background-color: $blue-ee;
+    }
+  }
+}
+
+
+.indexBarSchool {
+  display: flex;
+  padding: 2rem 6.5rem;
+
+  @include mediaMax(xs) {
+    padding: 2rem;
+  }
+
+  &Icon {
+    i {
+      font-size: 2.5rem;
+      margin-right: 2rem;
+      color: $black-2;
+    }
+  }
+
+  &Content {
+    position: relative;
+
+    &Title {
+      color: $black-2;
+
+      padding-bottom: 0.5rem;
+
+      @extend .fs-5;
+      @extend .text-upperCase;
+    }
+
+    & hr {
+      position: absolute;
+      width: 82px;
+      height: 5px;
+      border: 0;
+
+      &.isGreen {
+        background-color: $green-2;
+      }
+
+      &.isRed {
+        background-color: $red-2;
+      }
+
+      &.isBlue {
+        background-color: $blue-ee;
+      }
+    }
+  }
+}

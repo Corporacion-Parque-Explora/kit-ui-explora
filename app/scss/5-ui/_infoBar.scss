@@ -1,0 +1,67 @@
+#Infobar {
+  background-color: #ffffff21;
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  padding-right: 8%;
+  display: flex;
+  justify-content: flex-start;
+  & [class*='col'] {
+    display: flex;
+    align-items: flex-start;
+    padding: 2rem;
+    border-right: 1px solid $gray-5;
+    &:last-child {
+      border-right: 0;
+    }
+    & h6 {
+      font-size: 0.9rem;
+      font-weight: bold;
+    }
+    & p {
+      font-size: 0.9rem;
+      font-weight: 300;
+      margin: 0;
+    }
+    & .icon-explora {
+      font-size: 1.5rem !important;
+      margin-right: 10px;
+    }
+  }
+  & a:hover {
+    color: #fff;
+    background: #ffffff05;
+  }
+  /* Responsive Exlplora */
+  @media (max-width: $breakpoint-xl) {
+    padding-right: 5%;
+  }
+  @media (max-width: $breakpoint-lg) {
+    padding: 0;
+    justify-content: center;
+    border: 1px solid #b7b7c1;
+    & [class*='col'] {
+      border-right: 0;
+      display: none !important;
+      &:nth-child(2n) {
+        display: flex !important;
+      }
+    }
+  }
+  @media (max-width: $breakpoint-lg) {
+    right: unset;
+    width: 75%;
+    margin: auto;
+  }
+}
+.wrapper-infobar {
+  right: 0;
+  width: 850px;
+  @media (max-width: $breakpoint-lg) {
+    right: unset;
+    width: 100%;
+  }
+}
+
+/* Planetary */
+.planetary {
+}

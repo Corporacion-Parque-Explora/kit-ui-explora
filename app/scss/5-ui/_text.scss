@@ -1,0 +1,67 @@
+.backgroundImage {
+  background-image: url('/assets/icons-learn/graficos.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: auto 30rem;
+  background-attachment: local;
+}
+.textContainer {
+  margin-bottom: 6rem;
+  margin-top: 6rem;
+  column-count: 2;
+  column-rule: 1px solid $black-2;
+  column-gap: 8rem;
+  column-fill: balance;
+
+  @include mediaMax(xs) {
+    column-count: 1;
+  }
+
+  @extend .container;
+}
+
+.content {
+  & h2 {
+    max-width: 30rem;
+    color: $black-2;
+    padding-bottom: 0.5rem;
+
+    @extend .fs-4;
+  }
+
+  & h3 {
+    max-width: 30rem;
+    color: $black-2;
+    padding-bottom: 0.5rem;
+
+    @extend .is-size-1;
+  }
+
+  & p {
+    max-width: 33rem;
+    color: $black-1;
+    font-weight: 350;
+    padding: 0.5rem 0;
+    @extend .is-size-4;
+  }
+
+  & a {
+    color: $blue-ee;
+  }
+
+  & ul {
+    color: $black-2;
+    @extend .is-regular;
+    @extend .is-size-4;
+
+    & li {
+      padding-bottom: 0.5rem;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+        color: $blue-ee;
+      }
+    }
+  }
+}
