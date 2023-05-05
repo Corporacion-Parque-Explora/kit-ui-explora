@@ -1,0 +1,117 @@
+.containerTitle {
+  padding-top: 1rem;
+  &__title {
+    border-bottom: 1px solid $gray-4;
+    padding-bottom: 0.5rem;
+  }
+  &__subtitle {
+    color: $black-2;
+    padding: 1rem 0;
+  }
+}
+
+.containerImgListColor {
+  margin-top: 2rem;
+  background-image: url(../../../public/assets/docs/codeColors.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  height: 25rem;
+}
+
+.listCard {
+  background-color: $white;
+  box-shadow: 0px 0px 64px -33px rgba(0, 0, 0, 0.75);
+  padding: 1rem;
+  width: 100%;
+  &__containerCards {
+    &__card {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    &__containerImgCardLearn {
+      @extend .containerImgListColor;
+      margin-top: 1rem;
+      background-image: url(../../../public/assets/docs/codeCardLearn.svg);
+      background-position: center;
+      height: 46rem;
+    }
+    &__containerImgCardProgramate {
+      @extend .listCard__containerCards__containerImgCardLearn;
+      background-image: url(../../../public/assets/docs/codeCardLearn.svg);
+      height: 46rem;
+    }
+    &__containerImgCardProjects {
+      @extend .listCard__containerCards__containerImgCardLearn;
+      background-image: url(../../../public/assets/docs/codeCardProjects.svg);
+      height: 29rem;
+    }
+    &__containerImgCardContractUs {
+      @extend .listCard__containerCards__containerImgCardLearn;
+      background-image: url(../../../public/assets/docs/codeCardContractUs.svg);
+      height: 29rem;
+    }
+    &__containerImgCardStore {
+      @extend .listCard__containerCards__containerImgCardLearn;
+      background-image: url(../../../public/assets/docs/codeCardStore.svg);
+      height: 36rem;
+    }
+    &__containerImgCardExhibitions {
+      @extend .listCard__containerCards__containerImgCardLearn;
+      background-image: url(../../../public/assets/docs/codeCardExhibitions.svg);
+      height: 36rem;
+    }
+    &__containerImgBanner {
+      @extend .listCard__containerCards__containerImgCardLearn;
+      background-image: url(../../../public/assets/docs/codeBanner.svg);
+      height: 36rem;
+    }
+    &__containerImgCardShow {
+      @extend .listCard__containerCards__containerImgCardLearn;
+      background-image: url(../../../public/assets/docs/codeCardShow.svg);
+      height: 45rem;
+    }
+    &__containerImgButtonsPlanetary {
+      @extend .listCard__containerCards__containerImgCardLearn;
+      background-image: url(../../../public/assets/docs/codeButtonsPlanetary.svg);
+      height: 38rem;
+    }
+    &__containerImgCardExhibitionPlanetary {
+      @extend .listCard__containerCards__containerImgCardLearn;
+      background-image: url(../../../public/assets/docs/coddeCardExhibitionPlanetary.svg);
+      height: 34rem;
+    }
+    &__containerImgCardInfoInterests {
+      @extend .listCard__containerCards__containerImgCardLearn;
+      background-image: url(../../../public/assets/docs/codeCardInfoInterests.svg);
+      height: 35rem;
+    }
+    &__containerImgCardStorePlanetary {
+      @extend .listCard__containerCards__containerImgCardLearn;
+      background-image: url(../../../public/assets/docs/codeCardStorePlanetary.svg);
+      height: 41rem;
+    }
+    &__containerImgCardProgramatePlanetary {
+      @extend .listCard__containerCards__containerImgCardLearn;
+      background-image: url(../../../public/assets/docs/codeProgramatePlanetary.svg);
+      height: 72rem;
+    }
+    &__containerImgCarddWhatIs {
+      @extend .listCard__containerCards__containerImgCardLearn;
+      background-image: url(../../../public/assets/docs/codeCardWhatIs.svg);
+      height: 50rem;
+    }
+    &__containerImgBannerSlugPlanetary {
+      @extend .listCard__containerCards__containerImgCardLearn;
+      background-image: url(../../../public/assets/docs/codeCardSlugPlanetary.svg);
+      height: 101rem;
+    }
+    &__containerImgMainSlider {
+      @extend .listCard__containerCards__containerImgCardLearn;
+      background-image: url(../../../public/assets/docs/codeMainSlider.svg);
+      height: 108rem;
+    }
+  }
+}

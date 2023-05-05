@@ -1,0 +1,598 @@
+/* Globals Buttons */
+.btn {
+  /* Explore Buttons */
+  &-explore {
+    border: none;
+    outline: none;
+    font-size: $p4-font-size;
+    padding: 17px 60px 17px 25px;
+    background-color: $red-3;
+    color: $white;
+    text-transform: uppercase;
+    display: inline-flex;
+    position: relative;
+    border: 0;
+    font-weight: 700;
+    cursor: pointer;
+
+    &[class*='yellow'] {
+      background-color: $yellow-1;
+      color: $black-2;
+
+      &:hover {
+        color: $black-2;
+      }
+
+      &:after {
+        background: $red-3;
+      }
+    }
+
+    &[class*='green'] {
+      background-color: $green-3;
+      color: $white;
+
+      &:hover {
+        color: $white;
+      }
+
+      &:after {
+        background: $red-3;
+      }
+    }
+
+    &[class*='blue'] {
+      background-color: $blue-ee;
+      color: $white;
+
+      &:hover {
+        color: $white;
+      }
+
+      &:after {
+        background: $green-2;
+      }
+    }
+
+    &[class*='red-2'] {
+      background-color: $red-3;
+      color: $white;
+
+      &:hover {
+        color: $white;
+      }
+
+      &:after {
+        background: $green-3;
+      }
+    }
+
+    &[class*='btn-simple'] {
+      padding: 10px 60px 10px 25px;
+
+      &::after {
+        height: 0;
+      }
+
+      &.is-loading::after {
+        height: 50%;
+      }
+    }
+
+    &[class*='transparent'] {
+      background-color: transparent;
+      border: 1px solid rgb(255 255 255 / 50%);
+      transition: all 0.5s ease 0s;
+
+      &::after {
+        background-color: $white;
+        transition: all 0.5s ease 0s;
+        width: 0;
+        height: 1px;
+        bottom: 0;
+        left: 0;
+      }
+
+      &:hover:after {
+        width: 100%;
+        transition: all 0.5s ease 0s;
+      }
+    }
+
+    &[class*='icon-whatapp']::before {
+      content: '\e962';
+    }
+
+    &[class*='icon-download']::before {
+      content: '\e916';
+    }
+
+    &[class*='icon-left'] {
+      padding: 20px 30px 20px 70px;
+
+      &::before {
+        left: 25px;
+        height: 100%;
+        top: 0;
+        display: flex;
+        align-items: center;
+        font-size: 2rem;
+      }
+
+      &:hover {
+        border-color: $white;
+        transition: all 0.5s ease 0s;
+
+        &::before {
+          transform: translate3d(3px, 0, 0);
+        }
+      }
+    }
+
+    &[class*='ic-green'] {
+      &::before {
+        color: $green-3;
+      }
+    }
+
+    &[class*='target'] {
+      padding: 10px 20px;
+      justify-content: center;
+      align-items: center;
+
+      &::before {
+        display: none;
+      }
+
+      &::after {
+        background-color: rgb(255 255 255 / 10%);
+        transition: all 0.5s ease 0s;
+        width: 0;
+        height: 100%;
+        bottom: 0;
+        left: 0;
+      }
+
+      &:hover:after {
+        width: 100%;
+        transition: all 0.5s ease 0s;
+      }
+    }
+
+    &[class*='hover-dark'] {
+      &::after {
+        background-color: rgb(62 62 62 / 30%);
+        transition: all 0.5s ease 0s;
+      }
+    }
+
+    &[class*='no-icon'] {
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
+
+    &:before {
+      font-family: 'IconsExplora' !important;
+      content: '\e907';
+      right: 25px;
+      position: absolute;
+      top: calc(50% - 10px);
+      font-size: 1rem;
+      transition: all 0.5s ease 0s;
+    }
+
+    &:after {
+      content: '';
+      background: $yellow-1;
+      position: absolute;
+      width: 35%;
+      max-width: 100px;
+      height: 10px;
+      bottom: -10px;
+      left: 0;
+      transition: all 0.5s ease 0s;
+    }
+
+    &:hover {
+      color: $white;
+
+      &:before {
+        transform: translateX(5px);
+        transition: all 0.5s ease 0s;
+      }
+
+      &:after {
+        width: 100%;
+        max-width: 100%;
+        transition: all 0.5s ease 0s;
+      }
+    }
+
+    &[class*='bg-gray'] {
+      background-color: $gray-4;
+      --bs-text-opacity: 1;
+      color: $black-2;
+      margin-top: 2rem;
+    }
+  }
+
+  /* Planetary Buttons */
+  &-planetary {
+    border: none;
+    outline: none;
+    background-color: $green-p1;
+    color: $black-2;
+    padding: 18px 50px 18px 30px;
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+    font-size: $p5-font-size;
+    font-weight: 700;
+    position: relative;
+    transition: all 0.5s ease 0s;
+
+    &[class*='blue'] {
+      background-color: $blue-p2;
+    }
+
+    &[class*='beige'] {
+      background-color: $yellow-p1;
+    }
+
+    &[class*='transparent'] {
+      background-color: transparent;
+      border: 1px solid $white;
+      transition: all 0.5s ease 0s;
+      text-transform: none;
+      color: $white;
+      font-size: $p3-font-size;
+    }
+
+    &[class*='target'] {
+      background-color: transparent;
+      border: 1px solid $white;
+      transition: all 0.5s ease 0s;
+      text-transform: none;
+      color: $white;
+      padding: 10px 20px;
+      letter-spacing: 0;
+      font-size: 0.91rem;
+      font-weight: 400;
+      position: relative;
+      z-index: 1;
+      font-size: $p3-font-size;
+
+      &::after {
+        position: absolute;
+        background-color: $green-p1;
+        content: '';
+        width: 0;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transition: all 0.3s ease 0s;
+        transform: none;
+        z-index: -1;
+      }
+
+      &:hover {
+        color: $black-2;
+        font-weight: 400;
+
+        &::after {
+          width: 100%;
+          transform: none;
+          transition: all 0.3s ease 0s;
+        }
+      }
+
+      &[class*='white'] {
+        &::after {
+          background-color: rgba(255, 255, 255, 0.1);
+          -webkit-backdrop-filter: blur(48px);
+          backdrop-filter: blur(48px);
+        }
+
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+
+    &:before {
+      content: '';
+      background-color: rgb(0 0 0 / 7%);
+      width: 0;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      transition: all 0.5s ease 0s;
+    }
+
+    &:after {
+      font-family: 'IconsExplora' !important;
+      content: '\e925';
+      right: 15px;
+      position: absolute;
+      top: calc(50% - 9px);
+      font-size: 0.7rem;
+      transition: all 0.5s ease 0s;
+    }
+
+    &:hover {
+      color: $black-2;
+      font-weight: 700;
+      // background-color: #badb70;
+      transition: all 0.5s ease 0s;
+
+      &:before {
+        width: 100%;
+        transition: all 0.5s ease 0s;
+      }
+
+      &:after {
+        transform: rotate3d(1, 0, 0, 180deg);
+      }
+    }
+  }
+
+  // Button disabled
+  & .info {
+    display: none;
+  }
+
+  &.is-disabled {
+    background-color: rgba($red-1, 0.65);
+    cursor: not-allowed;
+    position: relative;
+
+    &:hover {
+      background-color: rgba($red-1, 0.7);
+    }
+
+    & .info {
+      text-transform: none;
+      position: absolute;
+      top: -10%;
+      left: 50%;
+      transform: translate(-50%, -100%);
+      color: $white;
+      background-color: $red-1;
+      width: 80%;
+      min-height: 2rem;
+      padding: 0.5rem;
+      text-align: center;
+      font-size: $p4-font-size;
+    }
+
+    &:hover .info {
+      display: block;
+    }
+  }
+
+  &.is-loading {
+    color: transparent !important;
+    pointer-events: none;
+
+    &::after {
+      position: absolute;
+      left: calc(50% - 0.8em);
+      top: calc(50% - 0.8em);
+      position: absolute !important;
+      -webkit-animation: 0.75s linear infinite spinner-border;
+      animation: 0.75s linear infinite spinner-border;
+      border-radius: 290486px;
+      background: transparent;
+      border-color: transparent transparent #ffffff #ffffff;
+      border-style: solid;
+      border-width: 2px;
+      content: '';
+      display: block;
+      height: 1.5rem;
+      position: relative;
+      width: 1.5rem;
+    }
+  }
+}
+
+.btn-escuela {
+  /* Explore Buttons */
+  &-auth {
+    border: none;
+    border-radius: 2rem;
+    outline: none;
+    font-size: $p4-font-size;
+    padding: 10px 30px;
+    background-color: $blue-ee;
+    color: $white;
+    margin-bottom: 0.5rem;
+    display: inline-flex;
+    position: relative;
+    border: 0;
+    font-weight: 500;
+    cursor: pointer;
+
+    &:hover {
+      transition-duration: 5ms;
+      background-color: $green-2;
+    }
+
+    &:after {
+      background: $green-2;
+    }
+
+    &.is-loading {
+      color: transparent !important;
+      pointer-events: none;
+      cursor: not-allowed;
+      &::after {
+        border-color: transparent transparent #ffffff #ffffff;
+        position: absolute !important;
+        left: calc(50% - 0.8em);
+        border-radius: 50%;
+        background: transparent;
+        top: calc(50% - 0.7em);
+        border-style: solid;
+        border-width: 2px;
+        position: relative;
+        display: block;
+        height: 1rem;
+        width: 1rem;
+        content: '';
+        animation: button-loading-spinner 0.7s infinite;
+        animation-timing-function: linear;
+      }
+      &.is-disable {
+        cursor: not-allowed;
+        &:hover {
+          background-color: $green-5;
+        }
+        &:active {
+          background-color: $green-5;
+        }
+      }
+    }
+  }
+}
+
+.btn-escuela {
+  /* Explore Buttons */
+  &-authGoogle {
+    border: none;
+    border-radius: 2rem;
+    outline: none;
+    font-size: $p4-font-size;
+    background-color: $blue-ee;
+    color: $white;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.5rem;
+    display: inline-flex;
+    position: relative;
+    border: 0;
+    font-weight: 500;
+    align-items: center;
+    cursor: pointer;
+    gap: 0.2rem;
+
+    &:hover {
+      transition-duration: 5ms;
+      background-color: $green-2;
+    }
+
+    &:after {
+      background: $gray-5;
+      background-color: $green-2;
+    }
+
+    &.is-loading {
+      color: transparent !important;
+      pointer-events: none;
+      cursor: not-allowed;
+      &::after {
+        border-color: transparent transparent #ffffff #ffffff;
+        position: absolute !important;
+        left: calc(50% - 0.8em);
+        border-radius: 50%;
+        background: transparent;
+        top: calc(50% - 0.7rem);
+        border-style: solid;
+        border-width: 2px;
+        position: relative;
+        display: block;
+        height: 1rem;
+        width: 1rem;
+        content: '';
+        animation: button-loading-spinner 0.7s infinite;
+        animation-timing-function: linear;
+      }
+      &.is-disable {
+        cursor: not-allowed;
+        &:hover {
+          background-color: $green-5;
+        }
+        &:active {
+          background-color: $green-5;
+        }
+      }
+    }
+  }
+
+  &-OutLine {
+    position: relative;
+    color: $white;
+    padding: 0.5rem 4rem;
+    @extend .is-size-5;
+    @extend .is-semibold;
+
+    &[class*='white'] {
+      border: 1px solid $white;
+
+      &::after {
+        content: '';
+        position: absolute;
+        background-color: rgb(255, 255, 255, 15%);
+        transition: all 0.5s ease 0s;
+        width: 0;
+        height: 100%;
+        top: 0;
+        left: 0;
+      }
+
+      &:hover {
+        &::after {
+          width: 100%;
+          transition: all 0.5s ease 0s;
+        }
+      }
+    }
+
+    &[class*='red'] {
+      background-color: $gray-1;
+      color: $black-1;
+      @extend .is-size-4;
+      @extend .is-light;
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background-color: rgba(226, 24, 24, 0.55);
+        transition: all 0.5s ease 0s;
+      }
+
+      &:hover {
+        &::after {
+          width: 100%;
+          transition: all 0.5s ease 0s;
+        }
+      }
+    }
+  }
+}
+
+.icon-authGoogle {
+  /* Escuela Explora Buttons */
+  background-size: contain;
+  outline: none;
+  display: inline-flex;
+  position: relative;
+}
+
+.margin {
+  margin-top: 3rem;
+}
+
+@keyframes button-loading-spinner {
+  from {
+    transform: rotate(0turn);
+  }
+
+  to {
+    transform: rotate(1turn);
+  }
+}
