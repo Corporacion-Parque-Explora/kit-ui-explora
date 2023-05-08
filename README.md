@@ -24,7 +24,11 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 ## Learn More
 
-This project is part of the parque explora corporation's kit-ui document, which will be used for shortcuts and ease of projects developed by the developers of the parque explora corporation, it is a kit that contains buttons, font weight, letters, bar navigation etc. that you can use according to the project to be carried out
+This project is part of the parque explora corporation's kit-ui document, which will be used for shortcuts and ease of projects developed by the developers
+
+of the parque explora corporation, it is a kit that contains buttons, font weight, letters, bar navigation etc. that you can use according to the project 
+
+to be carried out
 
 
 
