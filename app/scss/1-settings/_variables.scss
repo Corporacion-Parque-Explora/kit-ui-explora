@@ -46,6 +46,20 @@ $black-2: #44444a;
 
 $white: #fff;
 
+
+$theme-colors: (
+  'primary': $red-3,
+  'secondary': $gray-3,
+  'success': $green-3,
+  'warning': $yellow-3,
+  'light': $gray-2,
+  'dark': $black-1,
+  'info': $red-1,
+  'darkLight': $black-2,
+  'gray-dark': $gray-5,
+  'gray-6': $gray-6,
+
+);
 /* =====================
   * COLORS PLANETARY *
 ===================== */
@@ -58,7 +72,7 @@ $yellow-p1: #efc78c;
 $blue-p1: #48f1ff;
 $blue-p2: #39e8ef;
 $blue-p3: #24b1b7;
-$blue-4: #209ea3;
+$blue-p4: #209ea3;
 
 /* =====================
     * COLORS ESCUELA EXPLORA *

@@ -1,5 +1,4 @@
-@import '../app/scss/app.scss';
-
+@import "../app/scss/app.scss";
 
 * {
   padding: 0;
@@ -59,18 +58,368 @@ a {
   align-items: center;
 }
 
-.examples{
+.examples {
   display: flex;
   justify-content: space-between;
   padding-top: 1rem;
 }
 
-.examples-1{
- width: 50%;
+.examples-1 {
+  width: 50%;
   text-align: initial;
 }
-.examples-2{
- width: 43%;
+.examples-2 {
+  width: 43%;
   text-align: start;
 }
+.style-p {
+  margin: 2rem 0;
+  text-align: center;
+}
+.box {
+  margin-top: 1rem;
+  text-align: center;
+}
+.box-1 {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 5%;
+}
 
+.color-red-1 {
+  width: 160px;
+  height: 149px;
+  background-color: $red-1;
+  color: $white;
+}
+.color-red-2 {
+  width: 160px;
+  height: 149px;
+  background-color: $red-2;
+  color: $white;
+  text-align: center;
+}
+.color-red-3 {
+  width: 160px;
+  height: 149px;
+  background-color: $red-3;
+  color: $white;
+  text-align: center;
+}
+.color-red-4 {
+  width: 160px;
+  height: 149px;
+  background-color: $red-4;
+  color: $white;
+  text-align: center;
+}
+.color-red-5 {
+  width: 160px;
+  height: 149px;
+  background-color: $red-5;
+  color: $white;
+  text-align: center;
+}
+
+.box-2 {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 5%;
+}
+
+.color-yellow-1 {
+  width: 160px;
+  height: 149px;
+  background-color: $yellow-1;
+  color: gray;
+}
+.color-yellow-2 {
+  width: 160px;
+  height: 149px;
+  background-color: $yellow-2;
+  color: gray;
+}
+.color-yellow-3 {
+  width: 160px;
+  height: 149px;
+  background-color: $yellow-3;
+  color: gray;
+}
+.color-yellow-4 {
+  width: 160px;
+  height: 149px;
+  background-color: $yellow-4;
+  color: gray;
+}
+.color-yellow-5 {
+  width: 160px;
+  height: 149px;
+  background-color: $yellow-5;
+  color: gray;
+}
+
+.box-3 {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 5%;
+  color: $white;
+}
+
+.color-green-1 {
+  width: 160px;
+  height: 149px;
+  background-color: $green-1;
+}
+.color-green-2 {
+  width: 160px;
+  height: 149px;
+  background-color: $green-2;
+}
+.color-green-3 {
+  width: 160px;
+  height: 149px;
+  background-color: $green-3;
+}
+.color-green-4 {
+  width: 160px;
+  height: 149px;
+  background-color: $green-4;
+}
+.color-green-5 {
+  width: 160px;
+  height: 149px;
+  background-color: $green-5;
+}
+
+.box-4 {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 5%;
+  color: $white;
+}
+
+.color-orange-1 {
+  width: 160px;
+  height: 149px;
+  background-color: $orange-1;
+}
+.color-orange-2 {
+  width: 160px;
+  height: 149px;
+  background-color: $orange-2;
+}
+.color-orange-3 {
+  width: 160px;
+  height: 149px;
+  background-color: $orange-3;
+}
+.color-orange-4 {
+  width: 160px;
+  height: 149px;
+  background-color: $orange-4;
+}
+.color-orange-5 {
+  width: 160px;
+  height: 149px;
+  background-color: $orange-5;
+}
+
+.box-5 {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 5%;
+  color: $black-1;
+}
+
+.color-gray-1 {
+  width: 160px;
+  height: 149px;
+  background-color: $gray-1;
+}
+.color-gray-2 {
+  width: 160px;
+  height: 149px;
+  background-color: $gray-2;
+}
+.color-gray-3 {
+  width: 160px;
+  height: 149px;
+  background-color: $gray-3;
+}
+.color-gray-4 {
+  width: 160px;
+  height: 149px;
+  background-color: $gray-4;
+}
+.color-gray-5 {
+  width: 160px;
+  height: 149px;
+  background-color: $gray-5;
+}
+
+.box-6 {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 5%;
+  color: $black-1;
+}
+.color-gray-6 {
+  width: 160px;
+  height: 149px;
+  background-color: $gray-6;
+}
+.color-gray-7 {
+  width: 160px;
+  height: 149px;
+  background-color: $gray-7;
+}
+.color-gray-8 {
+  width: 160px;
+  height: 149px;
+  background-color: $gray-8;
+}
+
+.box-7 {
+  margin-top: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 15%;
+  color: $white;
+}
+.color-purple-1 {
+  width: 160px;
+  height: 149px;
+  background-color: $purple-1;
+}
+.color-purple-2 {
+  width: 160px;
+  height: 149px;
+  background-color: $purple-2;
+}
+.color-purple-3 {
+  width: 160px;
+  height: 149px;
+  background-color: $purple-3;
+}
+
+.box-8 {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 25%;
+  color: $white;
+}
+
+.color-blue-1 {
+  width: 160px;
+  height: 149px;
+  background-color: $blue-p1;
+}
+.color-blue-2 {
+  width: 160px;
+  height: 149px;
+  background-color: $blue-p2;
+}
+.color-blue-3 {
+  width: 160px;
+  height: 149px;
+  background-color: $blue-p3;
+}
+.color-blue-4 {
+  width: 160px;
+  height: 149px;
+  background-color: $blue-p4;
+}
+
+.box-9 {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 35%;
+  color: $white;
+}
+.color-green-p1 {
+  width: 160px;
+  height: 149px;
+  background-color: $green-p1;
+}
+.color-yellow-p1 {
+  width: 160px;
+  height: 149px;
+  background-color: $yellow-p1;
+}
+
+
+
+.btn-1 {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.content {
+  margin-left: 1%;
+  &[class*="title"] {
+    background-color: rgb(32, 32, 53);
+
+    @extend .is-size-5;
+    border: solid 0.5px;
+    width: 7%;
+    text-align: center;
+    border-radius: 8%;
+    padding: 0.47rem;
+    color: #ff9970;
+  }
+  &[class*="interfaz"] {
+    padding: 2rem;
+    @extend .is-size-5;
+    border: solid 1px;
+    border-radius: 2%;
+    width: 60%;
+    background-color: rgb(32, 32, 53);
+    color: white;
+  }
+
+  .subtitle {
+    padding: 10px 0;
+    button:first-child {
+      color: blue($color: #000000);
+    }
+  }
+}
+.btn-2 {
+  padding-bottom: 2rem;
+  gap: 2rem;
+  margin-left: 2%;
+}
+.btn-3{
+  padding-bottom: 2rem;
+  gap: 2rem;
+  margin-left: 2%;
+  display: flex;
+  flex-direction: row;
+}
+.btn-3{
+  padding-bottom: 2rem;
+  gap: 2rem;
+  margin-left: 2%;
+  display: flex;
+  flex-direction: row;
+}
