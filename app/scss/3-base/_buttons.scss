@@ -10,6 +10,7 @@
     border: none;
     @extend .is-semibold;
     cursor: pointer;
+    
 
     &[class*="red-2"] {
       &:after {
@@ -196,6 +197,7 @@
     color: $black-2;
     padding: 1.125rem 3.125rem 1.125rem 1.875rem;
     letter-spacing: 0.4rem;
+   
 
     font-size: $p5-font-size;
     @extend .is-semibold;
@@ -232,7 +234,6 @@
       position: relative;
       z-index: 1;
       font-size: $p4-font-size;
-      
 
       &::after {
         position: absolute;
@@ -243,6 +244,7 @@
         top: 0;
         left: 0;
         transition: all 0.2s ease 0s;
+
         z-index: -1;
       }
 
@@ -341,22 +343,37 @@
       display: block;
     }
   }
+}
 
-  &.is-loading {
-    color: transparent !important;
-    pointer-events: none;
-
-    &::after {
-      border: none;
-      outline: none;
-      background-color: #cdf279;
-      color: #44444a;
-      padding: 18px 50px 18px 30px;
-      text-transform: uppercase;
-      letter-spacing: 0.4rem;
-      font-weight: 700;
-      position: relative;
-      transition: all 0.5s ease 0s;
+.is-loading {
+  color: transparent !important;
+  pointer-events: none;
+  position: relative;
+ 
+  @keyframes spinner-border {
+    to {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
     }
+  }
+
+  &hover .is-loading{
+    cursor: disabled;
+  }
+
+  &::after {
+    left: calc(50% - 0.8em);
+    top: calc(50% - 0.8em);
+    position: absolute !important;
+    -webkit-animation: spinner-border 0.75s linear infinite;
+    animation: spinner-border 0.75s linear infinite;
+    border-radius: 290486px;
+    background: transparent;
+    border-color: transparent #ffffff #ffffff;
+    border-style: solid;
+    border-width: 1.5px;
+    content: "";
+    height: 1.5rem;
+    width: 1.5rem;
   }
 }

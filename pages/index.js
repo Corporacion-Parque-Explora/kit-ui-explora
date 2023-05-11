@@ -413,11 +413,11 @@ export default function Home() {
             </div>
             <div className=" content interfaz">
               <div className="subtitle">
-                {'<button className="v">BOTON 19</button>'}
+                {'<button className="btn-explore is-loading">BOTON 20</button>'}
                 <br></br>
                 <br></br>
                 {
-                  '<button className="btn-planetary is-loading">BOTON 19</button>'
+                  '<button className="btn-planetary is-loading">BOTON 21</button>'
                 }
               </div>
             </div>
