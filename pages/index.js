@@ -1,55 +1,11 @@
+import Texts from "@/app/components/modules/Texts";
 import React from "react";
 
 export default function Home() {
   return (
     <div className="kit-ui">
       <div className="container">
-        <div className="item">
-          <div className="titles">
-            <div className="title1">
-              <h3 className="fs-5">Titulos</h3>
-            </div>
-
-            <div className="title2">
-              <h3 className="fs-5">Textos</h3>
-            </div>
-          </div>
-          <hr></hr>
-          <div className="description">
-            <div></div>
-          </div>
-          <div className="examples">
-            <div className="examples-1">
-              <p className="fs-1">fs-1</p> <br />
-              <br />
-              <br />
-              <p className="fs-2">fs-2</p> <br />
-              <br />
-              <br />
-              <p className="fs-3">fs-3</p> <br />
-              <br />
-              <br />
-              <p className="fs-4">fs-4</p> <br />
-              <br />
-              <br />
-              <p className="fs-5">fs-5</p> <br />
-              <br />
-              <br />
-            </div>
-            <div className="examples-2">
-              <p className="is-size-1">is-size-1</p> <br />
-              <br />
-              <p className="is-size-2">is-size-2</p> <br />
-              <br />
-              <p className="is-size-3">is-size-3</p> <br />
-              <br />
-              <p className="is-size-4">is-size-4</p> <br />
-              <br />
-              <p className="is-size-5">is-size-5</p> <br />
-              <br />
-            </div>
-          </div>
-        </div>
+        <Texts />
 
         <div className="item">
           <div className="titles">
@@ -167,11 +123,11 @@ export default function Home() {
           </div>
 
           <div className="btn-1">
-            <button className="btn-explore">BOTON 1</button>
-            <button className="btn-explore btn-red-2">BOTON 2</button>
-            <button className="btn-explore btn-green">BOTON 3</button>
-            <button className="btn-explore  btn-yellow">BOTON 4</button>
-            <button className="btn-explore  btn-simple">BOTON 5</button>
+            <button className="btn">BOTON 1</button>
+            <button className="btn has-border-green">BOTON 2</button>
+            <button className="btn is-green">BOTON 3</button>
+            <button className="btn  is-yellow">BOTON 4</button>
+            <button className="btn  btn-simple">BOTON 5</button>
           </div>
           <div className="content">
             <div>

@@ -52,6 +52,7 @@ a {
   justify-content: space-between;
   padding-top: 1rem;
 }
+
 .text {
   padding-top: 1rem;
   text-align: center;
@@ -291,82 +292,6 @@ a {
   background-color: $gray-8;
 }
 
-.box-7 {
-  margin-top: 2rem;
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-left: 15%;
-  color: $white;
-}
-.color-purple-1 {
-  width: 160px;
-  height: 149px;
-  background-color: $purple-1;
-}
-.color-purple-2 {
-  width: 160px;
-  height: 149px;
-  background-color: $purple-2;
-}
-.color-purple-3 {
-  width: 160px;
-  height: 149px;
-  background-color: $purple-3;
-}
-
-.box-8 {
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-left: 25%;
-  color: $white;
-}
-
-.color-blue-1 {
-  width: 160px;
-  height: 149px;
-  background-color: $blue-p1;
-}
-.color-blue-2 {
-  width: 160px;
-  height: 149px;
-  background-color: $blue-p2;
-}
-.color-blue-3 {
-  width: 160px;
-  height: 149px;
-  background-color: $blue-p3;
-}
-.color-blue-4 {
-  width: 160px;
-  height: 149px;
-  background-color: $blue-p4;
-}
-
-.box-9 {
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-left: 35%;
-  color: $white;
-}
-.color-green-p1 {
-  width: 160px;
-  height: 149px;
-  background-color: $green-p1;
-}
-.color-yellow-p1 {
-  width: 160px;
-  height: 149px;
-  background-color: $yellow-p1;
-}
-
-
-
 .btn-1 {
   display: flex;
   gap: 2rem;
@@ -409,14 +334,14 @@ a {
   gap: 2rem;
   margin-left: 2%;
 }
-.btn-3{
+.btn-3 {
   padding-bottom: 2rem;
   gap: 2rem;
   margin-left: 2%;
   display: flex;
   flex-direction: row;
 }
-.btn-3{
+.btn-3 {
   padding-bottom: 2rem;
   gap: 2rem;
   margin-left: 2%;

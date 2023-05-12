@@ -1,5 +1,75 @@
-/* Globals Buttons */
 .btn {
+  padding: 1rem 4rem 1rem 2rem;
+  background-color: $red-3;
+  color: $white;
+  text-transform: uppercase;
+  position: relative;
+  border: none;
+  @extend .is-semibold;
+  cursor: pointer;
+
+  &:before {
+    font-family: "IconsExplora" !important;
+    content: "\e907";
+    right: 25px;
+    position: absolute;
+    top: calc(50% - 10px);
+    font-size: 1rem;
+    transition: all 0.5s ease 0s;
+  }
+
+  &:after {
+    content: "";
+    background: $yellow-1;
+    position: absolute;
+    width: 35%;
+    max-width: 100px;
+    height: 10px;
+    bottom: -10px;
+    left: 0;
+    transition: all 0.5s ease 0s;
+  }
+
+  &:hover {
+    color: $white;
+
+    &:before {
+      transform: translateX(5px);
+      transition: all 0.5s ease 0s;
+    }
+
+    &:after {
+      width: 100%;
+      max-width: 100%;
+      transition: all 0.5s ease 0s;
+    }
+  }
+
+  &.has-border-green::after {
+    background: $green-3;
+  }
+
+  &.is-green {
+    background-color: $green-3;
+    &::after {
+      background: $red-2;
+    }
+  }
+
+  &.is-yellow {
+    background-color: $yellow-2;
+    color: $black-2;
+    &::after {
+      background: $red-2;
+    }
+  }
+
+  &-simple::after {
+    display: none;
+  }
+}
+
+.btnold {
   /* Explore Buttons */
   &-explore {
     padding: 1.063rem 3.75rem 17px 25px;
@@ -187,124 +257,6 @@
       --bs-text-opacity: 1;
       color: $black-2;
       margin-top: 2rem;
-    }
-  }
-  //Buttons Planetary
-  &-planetary {
-    border: none;
-    background-color: $green-p1;
-    color: $black-2;
-    padding: 1.125rem 3.125rem 1.125rem 1.875rem;
-    letter-spacing: 0.4rem;
-
-    font-size: $p5-font-size;
-    @extend .is-semibold;
-    position: relative;
-    transition: all 0.5s ease 0s;
-
-    &[class*="blue"] {
-      background-color: $blue-p2;
-    }
-
-    &[class*="beige"] {
-      background-color: $yellow-p1;
-    }
-
-    &[class*="transparent"] {
-      background-color: transparent;
-      border: 1px solid $white;
-      transition: all 0.5s ease 0s;
-      text-transform: none;
-      color: $white;
-      font-size: $p5-font-size;
-    }
-
-    &[class*="target"] {
-      background-color: transparent;
-      border: 1px solid $white;
-      transition: all 0.6s ease 0s;
-      text-transform: none;
-      color: $white;
-      padding: 10px 20px;
-      letter-spacing: 0;
-      font-size: 0.91rem;
-      font-weight: 400;
-      position: relative;
-      z-index: 1;
-      font-size: $p4-font-size;
-      
-
-      &::after {
-        position: absolute;
-        background-color: $green-p1;
-        content: "";
-        width: 0;
-        height: 100%;
-        top: 0;
-        left: 0;
-        transition: all 0.2s ease 0s;
-        z-index: -1;
-      }
-
-      &:hover {
-        color: $black-2;
-        font-weight: 400;
-
-        &::after {
-          width: 100%;
-          transform: none;
-          transition: all 0.3s ease 0s;
-        }
-      }
-
-      &[class*="white"] {
-        &::after {
-          background-color: rgba(255, 255, 255, 0.1);
-          -webkit-backdrop-filter: blur(48px);
-          backdrop-filter: blur(48px);
-        }
-
-        &:hover {
-          color: $white;
-        }
-      }
-    }
-
-    &:before {
-      content: "";
-      background-color: rgb(0 0 0 / 7%);
-      width: 0;
-      height: 100%;
-      position: absolute;
-      left: 0;
-      top: 0;
-      transition: all 0.5s ease 0s;
-    }
-
-    &:after {
-      font-family: "IconsExplora" !important;
-      content: "\e925";
-      right: 15px;
-      position: absolute;
-      top: calc(55% - 9px);
-      font-size: 0.7rem;
-      transition: all 0.5s ease 0s;
-    }
-
-    &:hover {
-      color: $black-2;
-      font-weight: 700;
-      // background-color: #badb70;
-      transition: all 0.5s ease 0s;
-
-      &:before {
-        width: 100%;
-        transition: all 0.5s ease 0s;
-      }
-
-      &:after {
-        transform: rotate3d(1, 0, 0, 180deg);
-      }
     }
   }
 

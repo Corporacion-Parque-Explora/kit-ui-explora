@@ -2,7 +2,7 @@
     * FONTS *
 ===================== */
 
-$font-sora: 'Sora', sans-serif;
+$font-sora: "Sora", sans-serif;
 
 /* =====================
     * COLORS EXPLORA *
@@ -46,38 +46,23 @@ $black-2: #44444a;
 
 $white: #fff;
 
-
 $theme-colors: (
-  'primary': $red-3,
-  'secondary': $gray-3,
-  'success': $green-3,
-  'warning': $yellow-3,
-  'light': $gray-2,
-  'dark': $black-1,
-  'info': $red-1,
-  'darkLight': $black-2,
-  'gray-dark': $gray-5,
-  'gray-6': $gray-6,
-
+  "primary": $red-3,
+  "secondary": $gray-3,
+  "success": $green-3,
+  "warning": $yellow-3,
+  "light": $gray-2,
+  "dark": $black-1,
+  "info": $red-1,
+  "darkLight": $black-2,
+  "gray-dark": $gray-5,
+  "gray-6": $gray-6,
 );
-/* =====================
-  * COLORS PLANETARY *
-===================== */
-$purple-1: #6f619b;
-$purple-2: #232945;
-$purple-3: #313a61;
-$purple-d: transparent linear-gradient(82deg, #9679f2 0%, #ad43c6 100%) 0% 0% no-repeat padding-box;
-$green-p1: #cdf279;
-$yellow-p1: #efc78c;
-$blue-p1: #48f1ff;
-$blue-p2: #39e8ef;
-$blue-p3: #24b1b7;
-$blue-p4: #209ea3;
 
 /* =====================
     * COLORS ESCUELA EXPLORA *
 ===================== */
-$blue-ee: #58A0F4;
+$blue-ee: #58a0f4;
 
 /* =====================
     * BREAKPOINTS *
@@ -139,8 +124,8 @@ $btn-border-radius: 0;
     * ICONS EXPLORA *
 ===================== */
 
-$icomoon-font-family: 'IconsExplora' !default;
-$icomoon-font-path: '/assets/fonts/IconsExplora' !default;
+$icomoon-font-family: "IconsExplora" !default;
+$icomoon-font-path: "/assets/fonts/IconsExplora" !default;
 
 $icon-square-list: "\e968";
 $icon-list: "\e969";
