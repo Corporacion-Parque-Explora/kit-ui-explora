@@ -51,12 +51,12 @@
 
   &.is-green {
     background-color: $green-3;
-    &::after {
-      background: $red-2;
-    }
+   
+  }
 
-    &.simple {
-    }
+  &.is-gray {
+    background-color: $gray-5;
+    color: $black-2;
   }
 
   &.is-yellow {

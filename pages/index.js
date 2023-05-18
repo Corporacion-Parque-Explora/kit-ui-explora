@@ -1,7 +1,8 @@
 import Texts from "@/app/components/modules/Texts";
 import Fontweigth from "@/app/components/modules/Fontweight";
 import Buttons from "@/app/components/modules/Buttons";
-import Cards from "@/app/components/modules/Cards";
+import CardGeneric from "@/app/components/modules/CardGeneric";
+import Colors from "@/app/components/modules/Colors";
 import React from "react";
 
 export default function Home() {
@@ -9,9 +10,10 @@ export default function Home() {
     <div className="kit-ui">
       <div className="container">
         <Texts />
+        <Colors />
         <Fontweigth />
         <Buttons />
-      <Cards />
+        <CardGeneric />
       </div>
     </div>
   );

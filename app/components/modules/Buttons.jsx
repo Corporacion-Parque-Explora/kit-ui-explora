@@ -95,6 +95,8 @@ export default function Buttons() {
 
       <div className="btn-3">
         <button className="btn is-green no-icon">BOTON 10</button>
+
+        <button className="btn is-gray no-icon">BOTON GRAY</button>
       </div>
       <div className="content">
         <div>
@@ -103,6 +105,7 @@ export default function Buttons() {
         <div className=" content interfaz">
           <div className="subtitle">
             {'<button className="btn is-green no-icon">BOTON 10</button>'}
+            {' <button className="btn is-gray no-icon">BOTON 10</button>'}
           </div>
         </div>
       </div>
