@@ -27,7 +27,7 @@
     }
   }
 
-  &__card-date {
+  &-date {
     position: absolute;
     top: 170px;
     left: 0;
@@ -42,20 +42,18 @@
     }
   }
 
-  &__containerContent {
+  &-body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 1.5rem 2rem;
+    padding: 1.5rem 1rem;
 
     &.title {
-      // este elemto lleva la clase is-size-3 para el tamaño de texto
       text-transform: uppercase;
-      margin-bottom: 0.5rem;
+      margin-bottom: -2rem;
       padding-top: 0.5rem;
       font-weight: 700;
       color: $black-2;
-      margin-bottom: 2rem;
     }
 
     &.info {
@@ -80,6 +78,205 @@
 
     & a {
       text-decoration: none;
+    }
+  }
+}
+
+.cardProgramate {
+  display: flex;
+  flex-direction: column;
+  background-color: $white;
+  border: 1px solid $gray-1;
+  min-height: 100%;
+
+  @include mediaMax(sm) {
+    width: 300px;
+  }
+
+  @include mediaMin(sm) {
+    width: 492px;
+  }
+
+  @include mediaMin(md) {
+    width: 324px;
+  }
+
+  @include mediaMin(lg) {
+    width: 210px;
+  }
+
+  @include mediaMin(xl) {
+    width: 255px;
+  }
+
+  @include mediaMin(xxl) {
+    width: 300px;
+  }
+
+  &-bodyImg {
+    position: relative;
+
+    &-location {
+      position: absolute;
+      padding-left: 0.6rem !important;
+      top: 0;
+      line-height: 23px;
+      background: $gray-3;
+      padding: 0.5rem 1.5rem 0.5rem 0.6rem;
+    }
+
+    &-audience {
+      position: absolute;
+      display: flex;
+      bottom: 2px;
+
+      & p {
+        padding: 0.5rem 1rem 0.5rem 0.5rem;
+        color: $white;
+        @extend .is-size-5;
+      }
+
+      &-udience {
+        background-color: $red-3;
+      }
+
+      &-modality {
+        background-color: $gray-5;
+      }
+    }
+  }
+
+  &-bodyDate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+
+    &-itemDate {
+      display: flex;
+
+      @include mediaMin(lg) {
+        display: block;
+      }
+
+      @include mediaMin(xl) {
+        display: flex;
+      }
+
+      &-day {
+        padding-right: 0.25rem;
+        padding-left: 0.25rem;
+        margin-bottom: 0;
+        color: $black-2;
+        @extend .is-size-1;
+        @extend .is-bold;
+      }
+
+      &-month {
+        text-transform: capitalize;
+        color: $black-2;
+        margin-bottom: 0;
+        padding-right: 0.25rem;
+        @extend .is-size-1;
+        @extend .is-light;
+      }
+    }
+  }
+
+  & hr {
+    margin: 15px 0;
+    background: $gray-5;
+    height: 2.5px;
+    border: 0;
+  }
+
+  &-infoCard {
+    padding: 1rem 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: initial;
+
+    &-hour {
+      color: $red-3;
+      margin-bottom: 0;
+      @extend .is-size-3;
+      @extend .is-regular;
+    }
+
+    &-title {
+      color: $black-2;
+      min-height: 45px;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+      @extend .is-size-3;
+      @extend .is-bold;
+    }
+
+    &-price {
+      color: $red-3;
+      margin-bottom: 0;
+      @extend .is-light;
+      @extend .is-bold;
+    }
+    &-btn {
+      text-decoration: none;
+      justify-content: center;
+      color: $gray-7;
+      @extend .is-bold;
+      margin-top: 0;
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      cursor: pointer;
+    }
+  }
+}
+
+.cardProyects {
+  &-body {
+    padding: 0 25px 14px;
+    border: 0.3px solid $gray-2;
+    background: $white;
+
+    & h3 {
+      display: flex;
+      align-items: center;
+      min-height: 47px;
+      margin-bottom: 14px;
+      text-transform: uppercase;
+      padding-top: 0.5rem;
+      @extend .is-size-4;
+    }
+
+    & p {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 5;
+      overflow: hidden;
+      min-height: 120px;
+      color: $black-2;
+      margin-bottom: 0;
+      margin-bottom: 21px;
+      @extend .is-size-3;
+    }
+
+    & button {
+      text-decoration: none;
+      justify-content: center;
+      color: $gray-7;
+      padding-right: 100px;
+      background-color: $gray-2;
+      transition: 0.3s;
+      text-align: center;
+      cursor: pointer;
+      @extend .is-size-4;
+
+      &:hover {
+        color: $black-2;
+      }
     }
   }
 }

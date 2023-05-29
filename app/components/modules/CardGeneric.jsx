@@ -4,7 +4,7 @@ export default function CardGeneric() {
     <div className="item">
       <div className="titles">
         <div className="title1">
-          <h3 className="fs-5">Card</h3>
+          <h3 className="fs-5">Card Generic</h3>
         </div>
       </div>
       <hr></hr>
@@ -22,16 +22,18 @@ export default function CardGeneric() {
           ></div>
         </a>
 
-        <div className="card-generic__card-date">
+        <div className="card-generic-date">
           <p>19 </p>
           <p>MAY</p>
           <p></p>
         </div>
-        <div className="card-generic__containerContent">
-          <h3 className="card-generic__containerContent title">
+        <div className="card-generic-body">
+          <h3 className="card-generic-body title">
+            Ejemplo de titulo
+            Ejemplo de titulo
             Ejemplo de titulo
           </h3>
-          <p className="card-generic__containerContent info red-3 light">
+          <p className="card-generic-body info red-3 light">
             3:00 p.m.
           </p>
           <button className="btn target btn-gray hover-gray is-gray">
@@ -49,7 +51,9 @@ export default function CardGeneric() {
           <h3 className="content title">HTML</h3>
         </div>
         <div className=" content interfaz">
-          <div className="subtitle"></div>
+          <div className="subtitle">
+            {}
+          </div>
         </div>
       </div>
     </div>

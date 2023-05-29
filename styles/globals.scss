@@ -35,6 +35,19 @@ a {
   padding: 2rem 4.6rem;
   background: whitesmoke;
   margin-left: 3%;
+
+  &Cards {
+    box-shadow: rgba(149, 157, 165, 0.2) 12px 8px 24px;
+    margin: 2rem 0;
+    border-radius: 2%;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    padding: 2rem 4.6rem;
+    background: whitesmoke;
+    margin-left: 3%;
+    text-align: -webkit-center;
+  }
 }
 
 .titles {
