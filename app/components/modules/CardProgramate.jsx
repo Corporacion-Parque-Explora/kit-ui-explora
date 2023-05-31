@@ -1,8 +1,37 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
+import ExampleCard from "./ExamplesCards";
 
 export const CardProgramate = () => {
+  const exampleCodeFontsInLine = ` <div className="cardp is-active">
+  <div className="cardp-header ">
+    <Image
+      src="/assets/icons-learn/img.jpeg"
+      alt="..."
+      width="298"
+      height="200"
+    />
+    <div aria-hidden="true" className="cardp-header-location"> Planetario </div>
+    <div className="cardp-header-audience">
+      <p aria-hidden="true" className="cardp-header-audience-tag"> Jóvenes y adultos </p>
+      <p aria-hidden="true" className="cardp-header-audience-modality"> Presencial </p>
+    </div>
+  </div>
+  
+  <div className="cardp-bodyDate">
+    <div className="cardp-bodyDate-itemDate">
+      <h3 className="cardp-bodyDate-itemDate-day"> 2 </h3>
+      <h3 className="cardp-bodyDate-itemDate-month"> JUNIO </h3>
+    </div>
+  </div>
+  <span className="separatorCard"></span>
+  <div className="cardp-infoCard">
+    <p aria-label={"Hora del evento: 3:00 pm"}className="cardp-infoCard-hour"> 3:00 p.m. </p>
+    <h4 className="cardp-infoCard-title"> EJM: EJEMPLO CARD </h4>
+    <button className="cardp-infoCard-btn"> VER MÁS </button>
+  </div>
+</div> `;
+
   return (
     <>
       <div className="itemCards">
@@ -11,73 +40,66 @@ export const CardProgramate = () => {
             <h3 className="fs-5">Card Programate</h3>
           </div>
         </div>
-        
-        <div className="cardProgramate">
-          <div className="cardProgramate-bodyImg ">
+        <hr />
+        <br />
+
+        <div className="cardp is-active">
+          <div className="cardp-header ">
             <Image
               src="/assets/icons-learn/img.jpeg"
               alt="..."
-              width="252"
-              height="180"
+              width="298"
+              height="200"
             />
-            <p
-              aria-hidden="true"
-              className="cardProgramate-bodyImg-location"
-            >
-              Planetario
-            </p>
-            <div className="cardProgramate-bodyImg-audience">
+            <div aria-hidden="true" className="cardp-header-location">
               {" "}
-              <p
-                aria-hidden="true"
-                className="cardProgramate-bodyImg-audience-udience"
-              >
-                Jóvenes y adultos
+              Planetario{" "}
+            </div>
+            <div className="cardp-header-audience">
+              <p aria-hidden="true" className="cardp-header-audience-tag">
+                {" "}
+                Jóvenes y adultos{" "}
               </p>
-              <p
-                aria-hidden="true"
-                className="cardProgramate-bodyImg-audience-modality"
-              >
-        
+              <p aria-hidden="true" className="cardp-header-audience-modality">
                 Presencial
               </p>
             </div>
           </div>
-          <div className="cardProgramate-bodyDate">
-            <div className="cardProgramate-bodyDate-itemDate">
-              <h3 className="cardProgramate-bodyDate-itemDate-day">2</h3>
-              <h3 className="cardProgramate-bodyDate-itemDate-month">
-                JUNIO
-              </h3>
+
+          <div className="cardp-body">
+            <div className="cardp-body-date">
+              <h3 className="cardp-body-date-day">2</h3>
+              <h3 className="cardp-body-date-month">JUNIO</h3>
+            </div>
+            <div>
+              <div className="cardp-body-date-itemNow">
+                <span className="icon-explora icon-location-c"></span>
+                <span className="">Ocurre ahora</span>
+              </div>
             </div>
           </div>
-          <hr />
-          <div className="cardProgramate-infoCard">
+          <span className="separatorCard"></span>
+          <div className="cardp-infoCard">
             <p
-              aria-label={`Hora del evento: 7:00 pm`}
-              className="cardProgramate-infoCard-hour"
+              aria-label={`Hora del evento: 3:00 pm`}
+              className="cardP-infoCard-hour"
             >
               {" "}
-              3:00 p.m.
+              3:00 p.m.{" "}
             </p>
-            <h4 className="cardProgramate-infoCard-title">
-              EJM: EJEMPLO CARD
-            </h4>
-            <button className="cardProgramate-infoCard-btn">VER MÁS</button>
-          </div>
-        </div> 
-
-      <br />
-      <br />
-      <br />
-        <div className="content">
-          <div>
-            <h3 className="content title">HTML</h3>
-          </div>
-          <div className=" content interfaz">
-            <div className="subtitle"></div>
+            <h4 className="cardp-infoCard-title">EJM: EJEMPLO CARD</h4>
+            <button className="cardp-infoCard-btn">VER MÁS</button>
           </div>
         </div>
+
+        <br />
+        <br />
+        <br />
+
+        <ExampleCard
+          exampleCode={exampleCodeFontsInLine}
+          language={"javascript"}
+        ></ExampleCard>
       </div>
     </>
   );

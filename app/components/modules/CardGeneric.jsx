@@ -1,7 +1,30 @@
-import { ButtonGeneric } from "../ui/ButtonGeneric/ButtonGeneric";
+import ExampleCard from "./ExamplesCards";
+
 export default function CardGeneric() {
+  const exampleCodeFontsInLine = ` <div className="cardGeneric">
+  <a>
+    <div
+      style={{
+        backgroundImage:
+          "url(https://imgix.cosmicjs.com/d7ed4460-3ac6-11ed-adfd-ddb1795c6ac6-EXOPLANETAS-BANN.jpg?fit=crop&w=322&h=250)",}}>
+    </div>
+  </a>
+
+  <div className="cardGeneric-date">
+    <p>19 </p>
+    <p>MAY</p>
+  </div>
+
+  <div className="cardGeneric-body">
+    <h3 className="cardGeneric-body title">Ejemplo de titulo</h3>
+    <p className="cardGeneric-body hour">3:00 p.m.</p>
+    <button className="cardGeneric-body-btn">VER MÁS</button>
+  </div>
+  
+</div>`;
+
   return (
-    <div className="item">
+    <div className="itemCards">
       <div className="titles">
         <div className="title1">
           <h3 className="fs-5">Card Generic</h3>
@@ -12,49 +35,36 @@ export default function CardGeneric() {
       <br />
       <br />
 
-      <div className="card-generic">
+      <div className="cardGeneric">
         <a>
           <div
             style={{
               backgroundImage:
-                "url(https://imgix.cosmicjs.com/d7ed4460-3ac6-11ed-adfd-ddb1795c6ac6-EXOPLANETAS-BANN.jpg?fit=crop&w=322&h=250)",
-            }}
-          ></div>
+                "url(https://imgix.cosmicjs.com/d7ed4460-3ac6-11ed-adfd-ddb1795c6ac6-EXOPLANETAS-BANN.jpg?fit=crop&w=322&h=250)",}}>
+          </div>
         </a>
 
-        <div className="card-generic-date">
+        <div className="cardGeneric-date">
           <p>19 </p>
           <p>MAY</p>
-          <p></p>
         </div>
-        <div className="card-generic-body">
-          <h3 className="card-generic-body title">
-            Ejemplo de titulo
-            
-          </h3>
-          <p className="card-generic-body info red-3 light">
-            3:00 p.m.
-          </p>
-          <button className="btn target btn-gray hover-gray is-gray">
-            VER MÀS
-          </button>
+
+        <div className="cardGeneric-body">
+          <h3 className="cardGeneric-body title">Ejemplo de titulo</h3>
+          <p className="cardGeneric-body hour">3:00 p.m.</p>
+          <button className="cardGeneric-body-btn">VER MÁS</button>
         </div>
+
       </div>
 
       <br />
       <br />
       <br />
 
-      <div className="content">
-        <div>
-          <h3 className="content title">HTML</h3>
-        </div>
-        <div className=" content interfaz">
-          <div className="subtitle">
-            {}
-          </div>
-        </div>
-      </div>
+      <ExampleCard
+        exampleCode={exampleCodeFontsInLine}
+        language={"html"}
+      ></ExampleCard>
     </div>
   );
 }

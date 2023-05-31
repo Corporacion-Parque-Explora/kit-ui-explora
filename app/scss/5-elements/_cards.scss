@@ -1,4 +1,4 @@
-.card-generic {
+.cardGeneric {
   flex-grow: 1;
   height: 100%;
   display: flex;
@@ -56,24 +56,19 @@
       color: $black-2;
     }
 
-    &.info {
+    &.hour {
       margin-bottom: 1rem;
-
-      &.red-3 {
-        color: $red-3;
-      }
-
-      &.gray-color {
-        color: #bbbbbb;
-      }
-
-      &.light {
-        font-weight: 300;
-      }
-
-      &.bold {
-        font-weight: 700;
-      }
+      color: $red-3;
+    }
+    &-btn {
+      border: none;
+      margin: 1rem 0;
+      padding: 0.6rem 0;
+      cursor: pointer;
+      align-self: center;
+      width: 85%;
+      color: $gray-7;
+      @extend .is-extrabold;
     }
 
     & a {
@@ -82,12 +77,19 @@
   }
 }
 
-.cardProgramate {
+.cardp {
   display: flex;
   flex-direction: column;
   background-color: $white;
   border: 1px solid $gray-1;
   min-height: 100%;
+
+  &.is-active {
+    & .cardp-body-date-itemNow {
+      display: flex;
+    }
+  }
+
 
   @include mediaMax(sm) {
     width: 300px;
@@ -113,12 +115,11 @@
     width: 300px;
   }
 
-  &-bodyImg {
+  &-header {
     position: relative;
 
     &-location {
       position: absolute;
-      padding-left: 0.6rem !important;
       top: 0;
       line-height: 23px;
       background: $gray-3;
@@ -128,15 +129,14 @@
     &-audience {
       position: absolute;
       display: flex;
-      bottom: 2px;
-
+      bottom: 5px;
       & p {
         padding: 0.5rem 1rem 0.5rem 0.5rem;
         color: $white;
         @extend .is-size-5;
       }
 
-      &-udience {
+      &-tag {
         background-color: $red-3;
       }
 
@@ -146,13 +146,13 @@
     }
   }
 
-  &-bodyDate {
+  &-body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    margin: 0.5rem;
 
-    &-itemDate {
+    &-date {
       display: flex;
 
       @include mediaMin(lg) {
@@ -180,18 +180,27 @@
         @extend .is-size-1;
         @extend .is-light;
       }
+      &-itemNow {
+        display: none; // Por defecto, oculto el componente
+        align-items: center;
+        border: 1px solid $red-1;
+        border-radius: 0.35rem;
+        padding: 0.5rem;
+        color: $red-1;
+        overflow: hidden;
+        cursor: pointer;
+        @extend .is-size-4;
+
+        & span + span {
+          margin-left: 0.5rem;
+        }
+      }
     }
   }
 
-  & hr {
-    margin: 15px 0;
-    background: $gray-5;
-    height: 2.5px;
-    border: 0;
-  }
-
+  
   &-infoCard {
-    padding: 1rem 1.5rem;
+    padding: 1rem;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -221,33 +230,33 @@
       @extend .is-bold;
     }
     &-btn {
-      text-decoration: none;
-      justify-content: center;
-      color: $gray-7;
-      @extend .is-bold;
-      margin-top: 0;
-      margin-top: 1.5rem;
-      margin-bottom: 1.5rem;
-      padding-top: 0.5rem;
-      padding-bottom: 0.5rem;
+      border: none;
+      color: #707074;
+      margin: 1rem 0;
+      padding: 0.6rem 0;
       cursor: pointer;
+      align-self: center;
+      width: 85%;
+      color: $gray-7;
+      @extend .is-extrabold;
     }
   }
 }
 
 .cardProyects {
-  width: 334px;
+  width: 331px;
 
+  &-img {
+    writing-mode: vertical-rl;
+    -webkit-writing-mode: vertical-rl;
+    -moz-writing-mode: vertical-rl;
+    -ms-writing-mode: vertical-rl;
+  }
   &-body {
     padding: 0 25px 14px;
     border: 0.3px solid $gray-2;
     background: $white;
 
-    &-img {
-      width: 334px;
-      height: 334px;
-
-    }
     &-title {
       display: flex;
       align-items: center;
@@ -262,19 +271,25 @@
       text-align: initial;
       line-height: 1.3;
       padding-bottom: 1rem;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      -webkit-line-clamp: 3;
+      text-overflow: ellipsis;
     }
 
     &-btn {
-      padding: 1rem 4rem 1rem 2rem;
-      color: $white;
-      text-transform: uppercase;
       border: none;
-      @extend .is-semibold;
-      @extend .is-size-3;
+      text-transform: uppercase;
+      margin: 1rem 0;
+      padding: 0.6rem 0;
       cursor: pointer;
-      color: $gray-7;
-      text-align: center;
+      align-self: center;
       width: 85%;
+      color: $gray-7;
+      @extend .is-extrabold;
     }
   }
 }
+

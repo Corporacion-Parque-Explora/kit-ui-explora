@@ -9,6 +9,8 @@ export const CardProjects = () => {
           <h3 className="fs-5">Card Proyectos</h3>
         </div>
       </div>
+      <hr />
+      <br />
 
       <div className="cardProyects">
         <div className="cardProyects-img">
@@ -25,7 +27,8 @@ export const CardProjects = () => {
             popularizado en los 60s con la creación de las hojas etraset, las
             cuales contenian pasajes de Lorem Ipsum, y más recientemente con
             software de autoedición, como por ejemplo Aldus PageMaker, el cual
-            incluye versiones de Lorem Ipsum.
+            incluye versiones de Lorem Ipsum.popularizado en los 60s con la
+       
           </p>
           <button className="cardProyects-body-btn">ver más</button>
         </div>

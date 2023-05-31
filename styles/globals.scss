@@ -365,3 +365,15 @@ a {
 .card-contain {
   text-align: -webkit-center;
 }
+
+.codeExample {
+  max-width: 80rem;
+  margin: auto;
+  
+}
+
+.separatorCard {
+  background: $gray-4;
+  height: 1.5px;
+  border: 1px;
+}

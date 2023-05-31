@@ -104,8 +104,8 @@ export default function Buttons() {
         </div>
         <div className=" content interfaz">
           <div className="subtitle">
-            {'<button className="btn is-green no-icon">BOTON 10</button>'}
-            {' <button className="btn is-gray no-icon">BOTON 10</button>'}
+            {'<button className="btn is-green no-icon">BOTON 10</button>'} <br /> <br />
+            {' <button className="btn is-gray no-icon"> </button>'}
           </div>
         </div>
       </div>
