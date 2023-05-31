@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 
-
 export const CardProjects = () => {
   return (
     <div className="itemCards">
@@ -11,27 +10,23 @@ export const CardProjects = () => {
         </div>
       </div>
 
-
-      <div style={{ width: "348px" }}>
+      <div className="cardProyects">
         <Image
           src="/assets/icons-learn/img.jpeg"
           classame="card-img-top img-fluid"
           alt="Imagen"
           width="343"
-          height="233"
+          height="243"
         />
         <div className="cardProyects-body">
-          <h3>EJEMPLO TITULO </h3>
-          <p>
+          <h3 className="cardProyects-body-title">EJEMPLO TITULO </h3>
+          <p className="cardProyects-body-info">
             popularizado en los 60s con la creación de las hojas etraset, las
             cuales contenian pasajes de Lorem Ipsum, y más recientemente con
             software de autoedición, como por ejemplo Aldus PageMaker, el cual
             incluye versiones de Lorem Ipsum.
           </p>
-
-         
-            <button className="btn no-icon bg-gray">ver más</button>
-         
+          <button className="cardProyects-body-btn">ver más</button>
         </div>
       </div>
     </div>

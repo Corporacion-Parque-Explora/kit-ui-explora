@@ -31,7 +31,6 @@ export default function CardGeneric() {
           <h3 className="card-generic-body title">
             Ejemplo de titulo
             Ejemplo de titulo
-            Ejemplo de titulo
           </h3>
           <p className="card-generic-body info red-3 light">
             3:00 p.m.
