@@ -30,7 +30,7 @@ export default function CardGeneric() {
         <div className="card-generic-body">
           <h3 className="card-generic-body title">
             Ejemplo de titulo
-            Ejemplo de titulo
+            
           </h3>
           <p className="card-generic-body info red-3 light">
             3:00 p.m.

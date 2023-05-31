@@ -11,13 +11,14 @@ export const CardProjects = () => {
       </div>
 
       <div className="cardProyects">
-        <Image
-          src="/assets/icons-learn/img.jpeg"
-          classame="card-img-top img-fluid"
-          alt="Imagen"
-          width="343"
-          height="243"
-        />
+        <div className="cardProyects-img">
+          <Image
+            src="/assets/icons-learn/hd.jpeg"
+            alt="Imagen"
+            width="330"
+            height="240"
+          />
+        </div>
         <div className="cardProyects-body">
           <h3 className="cardProyects-body-title">EJEMPLO TITULO </h3>
           <p className="cardProyects-body-info">
