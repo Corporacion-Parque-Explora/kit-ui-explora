@@ -168,6 +168,7 @@
         padding-left: 0.25rem;
         margin-bottom: 0;
         color: $black-2;
+        text-transform: uppercase;
         @extend .is-size-1;
         @extend .is-bold;
       }
@@ -179,6 +180,7 @@
         padding-right: 0.25rem;
         @extend .is-size-1;
         @extend .is-light;
+        text-transform: uppercase;
       }
       &-itemNow {
         display: none; // Por defecto, oculto el componente
@@ -221,6 +223,7 @@
       margin-bottom: 0.5rem;
       @extend .is-size-3;
       @extend .is-bold;
+      
     }
 
     &-price {
@@ -239,6 +242,7 @@
       width: 85%;
       color: $gray-7;
       @extend .is-extrabold;
+      text-transform: uppercase;
     }
   }
 }
