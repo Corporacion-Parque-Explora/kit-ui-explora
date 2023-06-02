@@ -369,11 +369,27 @@ a {
 .codeExample {
   max-width: 80rem;
   margin: auto;
-  
 }
 
 .separatorCard {
   background: $gray-4;
   height: 1.5px;
   border: 1px;
+}
+
+.separatorTitle {
+  display: inline-block;
+}
+
+.separatorTitle h2 {
+  font-size: 27px;
+}
+
+.separatorTitle hr {
+  background-color: $red-3;
+  height: 8px;
+  margin-top: 3px;
+  width: 42%;
+  margin-left: -57%;
+  border: none;
 }
