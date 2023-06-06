@@ -294,63 +294,65 @@
   }
 }
 
-.informationInterest {
+.cardInfo {
   min-height: 70vh;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  & [class*="Separator"] {
-    top: 0;
-  }
-  & .CardsInfo {
+
+  &-header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 1rem;
     margin: 2rem 0 4rem;
-    & .cardInfo {
-      background-color: $red-3;
-      padding: 4rem 1rem 2rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between;
-      text-align: center;
-      & .infoTitle {
-        color: #fff;
-        @extend .is-size-2;
-        font-weight: bold;
-        margin: 3rem 0 1rem;
+  }
+
+  &-body {
+    background-color: $red-3;
+    padding: 4rem 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+
+    &-title {
+      color: #fff;
+      @extend .is-size-2;
+      font-weight: bold;
+      margin: 3rem 0 1rem;
+    }
+
+    &-button {
+      @extend .is-size-3;
+      position: relative;
+      background: $white;
+      border: 1px solid $white;
+      color: $red-3;
+      display: inline-block;
+      font-weight: bold;
+      padding: 0.6rem 1rem;
+      width: 90%;
+      &:before {
+        background-color: rgb(0 0 0 / 10%);
+        position: absolute;
+        content: "";
+        width: 0%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transition: all 0.5s ease 0s;
       }
-      & .infoButton {
-        @extend .is-size-3;
-        position: relative;
-        background: $white;
-        border: 1px solid $white;
-        color: $red-3;
-        display: inline-block;
-        font-weight: bold;
-        padding: 0.6rem 1rem;
-        width: 90%;
+      &:hover {
         &:before {
-          background-color: rgb(0 0 0 / 10%);
-          position: absolute;
-          content: "";
-          width: 0%;
-          height: 100%;
-          top: 0;
-          left: 0;
+          width: 100%;
           transition: all 0.5s ease 0s;
-        }
-        &:hover {
-          &:before {
-            width: 100%;
-            transition: all 0.5s ease 0s;
-          }
         }
       }
     }
   }
+
   @media (max-width: $breakpoint-lg) {
     & .CardsInfo {
       grid-template-columns: 1fr 1fr;
