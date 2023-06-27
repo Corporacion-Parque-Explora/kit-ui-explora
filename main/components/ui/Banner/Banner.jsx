@@ -1,30 +1,30 @@
-import React from 'react';
-import IndexBarExplora from '../IndexBarExplora/IndexBarExplora';
-import Link from 'next/link';
-import { ButtonGeneric } from '../ButtonGeneric/ButtonGeneric';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
 
-export const Banner = ({ title, subtitle }) => (
-  <div
-    className="banner"
-    style={{
-      background: `url(https://imgix.cosmicjs.com/152f49e0-39c3-11ed-adfd-ddb1795c6ac6-Noche-de-sordos-banner.jpg?fit=crop&w=1354&h=588)`,
-      backgroundRepeat: 'no-repeat',
-      backgroundSize: 'cover',
-    }}
-  >
-    <IndexBarExplora title={'NUESTRA PROGRAMACIÓN'} isColor={1} isTrasparent />
-    <div className="banner__infoBannerProgramming">
-      <h2>{title}</h2>
-      <p>{subtitle}</p>
-      <Link href={`/programate/`} passHref legacyBehavior>
-        <ButtonGeneric
-          href={''}
-          className={`btn-explore is-bold`}
-          ariaLabel={`ver mas sobre ${title}`}
-          textButton={'Ver evento'}
-          textTransform={'toUpperCase'}
-        />
-      </Link>
-    </div>
-  </div>
-);
+// import required modules
+import { Navigation, Pagination } from "swiper";
+import { Children } from "react";
+
+export default function Banner({ children }) {
+  const arrayChildren = Children.toArray(children);
+
+  return (
+    <Swiper
+      slidesPerView={"auto"}
+      pagination={{
+        clickable: true,
+      }}
+      modules={[Pagination, Navigation]}
+      className="banner-slider"
+      navigation={true}
+      autoplay={{
+        delay: 5000,
+        disableOnInteraction: false,
+      }}
+    >
+      {arrayChildren.map((child, index) => (
+        <SwiperSlide key={index}>{child}</SwiperSlide>
+      ))}
+    </Swiper>
+  );
+}
