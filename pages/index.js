@@ -1,13 +1,13 @@
-import Texts from "@/app/components/modules/Texts";
-import Fontweigth from "@/app/components/modules/Fontweight";
-import Buttons from "@/app/components/modules/Buttons";
-import CardGeneric from "@/app/components/modules/CardGeneric";
-import Colors from "@/app/components/modules/Colors";
-import SeparatorTitle from "@/app/components/modules/SeparatorTitle";
-import CardsInfo from "@/app/components/modules/CardInfo";
+import Texts from "@/main/components/modules/Texts";
+import Fontweigth from "@/main/components/modules/Fontweight";
+import Buttons from "@/main/components/modules/Buttons";
+import CardGeneric from "@/main/components/modules/CardGeneric";
+import Colors from "@/main/components/modules/Colors";
+import SeparatorTitle from "@/main/components/modules/SeparatorTitle";
+import CardsInfo from "@/main/components/modules/CardInfo";
 import React from "react";
-import { CardProgramate } from "@/app/components/modules/CardProgramate";
-import { CardProjects } from "@/app/components/modules/CardProjects";
+import { CardProgramate } from "@/main/components/modules/CardProgramate";
+import { CardProjects } from "@/main/components/modules/CardProjects";
 export default function Home() {
   return (
     <div className="kit-ui">
