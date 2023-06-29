@@ -1,5 +1,3 @@
-import ExampleCard from "./ExamplesCards";
-
 export default function CardGeneric() {
   const exampleCodeFontsInLine = ` <div className="cardGeneric">
   <a>
@@ -40,8 +38,9 @@ export default function CardGeneric() {
           <div
             style={{
               backgroundImage:
-                "url(https://imgix.cosmicjs.com/d7ed4460-3ac6-11ed-adfd-ddb1795c6ac6-EXOPLANETAS-BANN.jpg?fit=crop&w=322&h=250)",}}>
-          </div>
+                "url(https://imgix.cosmicjs.com/d7ed4460-3ac6-11ed-adfd-ddb1795c6ac6-EXOPLANETAS-BANN.jpg?fit=crop&w=322&h=250)",
+            }}
+          ></div>
         </a>
 
         <div className="cardGeneric-date">
@@ -54,17 +53,11 @@ export default function CardGeneric() {
           <p className="cardGeneric-body hour">3:00 p.m.</p>
           <button className="cardGeneric-body-btn">VER MÁS</button>
         </div>
-
       </div>
 
       <br />
       <br />
       <br />
-
-      <ExampleCard
-        exampleCode={exampleCodeFontsInLine}
-        language={"html"}
-      ></ExampleCard>
     </div>
   );
 }

@@ -1,0 +1,62 @@
+.icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+
+  & .icon {
+    margin: 0;
+  }
+}
+
+.info-box {
+  background-color: $primary-color;
+  color: $secondary-color;
+  padding: 1rem 2rem;
+  border-radius: 16px 16px 16px 0;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1rem;
+  max-width: 30rem;
+
+  @include mediaMax(xs) {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    padding: 0;
+    padding-bottom: 1rem;
+  }
+
+  & .icon {
+    margin: auto;
+  }
+}
+
+.space-box {
+  width: 100vw;
+  height: 5rem;
+
+  &.is-blue {
+    background-color: $blue-ee;
+  }
+
+  &.is-red {
+    background-color: $red-1;
+  }
+
+  &.is-green {
+    background-color: $green-2;
+  }
+
+  &.is-orange {
+    background-color: $orange-1;
+  }
+
+  &.is-normal {
+    height: 8rem;
+  }
+
+  &.is-medium {
+    height: 10rem;
+  }
+}

@@ -2,3 +2,19 @@
   background-color: rgba($primary-color, 0.6);
   backdrop-filter: blur(7.5px);
 }
+
+.has-bg-primary {
+  background-color: $primary-color;
+}
+
+.has-bg-secondary {
+  background-color: $secondary-color;
+}
+
+.has-bg-accent {
+  background-color: $accent-color;
+}
+
+.has-bg-white {
+  background-color: $white;
+}

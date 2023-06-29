@@ -1,0 +1,25 @@
+.input {
+  border: none;
+  background-color: $primary-color;
+  outline: none;
+  width: 5rem;
+  transition: all 0.3s ease-in-out;
+  height: 2rem;
+  padding: 0.3rem 0.5rem;
+  @extend .is-size-3;
+
+  &::placeholder {
+    color: $secondary-color;
+  }
+
+  &:focus,
+  &:hover,
+  &.is-active {
+    width: 13rem;
+    transition: all 0.3s ease-in-out;
+    color: $secondary-color;
+    &::placeholder {
+      color: rgba($secondary-color, 0.5);
+    }
+  }
+}

@@ -85,57 +85,6 @@
   text-transform: uppercase;
 }
 
-.content {
-  & h2 {
-    padding-bottom: 0.5rem;
-
-    @extend .fs-4;
-  }
-
-  & h3 {
-    padding-bottom: 0.5rem;
-
-    @extend .is-size-1;
-  }
-
-  & h4 {
-    padding-bottom: 0.5rem;
-    text-decoration: underline;
-    @extend .is-size-2;
-  }
-  & strong span {
-    font-weight: 600;
-    line-height: 160%;
-    @extend .is-size-1;
-  }
-
-  & p {
-    font-weight: 350;
-    padding: 0.5rem 0;
-    @extend .is-size-3;
-  }
-
-  & a {
-    font-weight: 600;
-    text-decoration: underline;
-    & span {
-      text-decoration: none;
-    }
-  }
-
-  & ul {
-    color: $secondary-color;
-    @extend .is-regular;
-    @extend .is-size-4;
-    padding-left: 2rem;
-
-    & li {
-      padding-bottom: 0.5rem;
-      list-style-type: square;
-    }
-  }
-}
-
 .is-color-red {
   color: $red-1;
 }

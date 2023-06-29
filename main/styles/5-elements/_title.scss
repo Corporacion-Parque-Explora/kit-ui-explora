@@ -1,0 +1,30 @@
+.main-title {
+  @extend .is-size-1;
+  text-transform: uppercase;
+  position: relative;
+  width: auto;
+  padding: 2rem 0;
+  font-weight: 700;
+
+  &::after {
+    background-color: $accent-color;
+    height: 8px;
+    position: absolute;
+    content: "";
+    bottom: 1.5rem;
+    width: 6rem;
+    left: 0;
+    border: none;
+  }
+
+  &.is-primary {
+    &::after {
+      background-color: $primary-color;
+    }
+  }
+  &.is-secondary {
+    &::after {
+      background-color: $secondary-color;
+    }
+  }
+}

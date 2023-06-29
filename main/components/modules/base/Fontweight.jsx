@@ -1,6 +1,6 @@
 export default function Fontweigth() {
   return (
-    <div className="item">
+    <div className="item" id="fuente">
       <div className="titles">
         <div className="title1">
           <h3 className="fs-5">Peso de fuente</h3>

@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import ExampleCard from "./ExamplesCards";
 
 export const CardProgramate = () => {
   const exampleCodeFontsInLine = `      <div className="cardp is-active">
@@ -59,10 +58,19 @@ export const CardProgramate = () => {
               width="298"
               height="200"
             />
-            <div aria-hidden="true" className="cardp-header-location"> Planetario </div>
+            <div aria-hidden="true" className="cardp-header-location">
+              {" "}
+              Planetario{" "}
+            </div>
             <div className="cardp-header-audience">
-              <p aria-hidden="true" className="cardp-header-audience-tag"> Jóvenes y adultos </p>
-              <p aria-hidden="true" className="cardp-header-audience-modality"> Presencial </p>
+              <p aria-hidden="true" className="cardp-header-audience-tag">
+                {" "}
+                Jóvenes y adultos{" "}
+              </p>
+              <p aria-hidden="true" className="cardp-header-audience-modality">
+                {" "}
+                Presencial{" "}
+              </p>
             </div>
           </div>
 
@@ -80,20 +88,21 @@ export const CardProgramate = () => {
           </div>
           <span className="separatorCard"></span>
           <div className="cardp-infoCard">
-            <p aria-label={`Hora del evento: 3:00 pm`} className="cardP-infoCard-hour" > 3:00 p.m. </p>
+            <p
+              aria-label={`Hora del evento: 3:00 pm`}
+              className="cardP-infoCard-hour"
+            >
+              {" "}
+              3:00 p.m.{" "}
+            </p>
             <h4 className="cardp-infoCard-title"> ejm: card ejemplo</h4>
-            <button className="cardp-infoCard-btn"> ver más  </button>
+            <button className="cardp-infoCard-btn"> ver más </button>
           </div>
         </div>
 
         <br />
         <br />
         <br />
-
-        <ExampleCard
-          exampleCode={exampleCodeFontsInLine}
-          language={"javascript"}
-        ></ExampleCard>
       </div>
     </>
   );

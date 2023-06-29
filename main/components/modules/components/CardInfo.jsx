@@ -1,28 +1,4 @@
-import ExampleCard from "./ExamplesCards";
-
 import Image from "next/image";
-const exampleCodeFontsInLine = `   <div className="cardInfo-header">
-<div className="cardInfo-body">
-  <Image
-    aria-hidden="true"
-    src="/assets/icons/icon-time2.webp"
-    alt="icon"
-    width={"140"}
-    height={"150"}
-  />
-
-  <h3 className="cardInfo-body-title">HORARIOS Y TARIFAS</h3>
-
-  <a
-    role="button"
-    aria-label="Ver mas sobre HORARIOS Y TARIFAS"
-    className="cardInfo-body-button"
-    href=""
-  >
-    VER MÁS
-  </a>
-</div>
-</div> `;
 export default function CardsInfo() {
   return (
     <div className="cardInfo">
@@ -123,11 +99,6 @@ export default function CardsInfo() {
           <br />
           <br />
           <br />
-
-          <ExampleCard
-            exampleCode={exampleCodeFontsInLine}
-            language={"javascript"}
-          ></ExampleCard>
         </div>
       </div>
     </div>

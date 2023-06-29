@@ -58,6 +58,7 @@ $vnavbar-width: 12rem;
       grid-area: main;
       position: relative;
       max-width: 80vw;
+      max-height: calc($navbar-height - 1rem);
     }
 
     @include mediaMax(md) {
@@ -120,6 +121,11 @@ $vnavbar-width: 12rem;
     outline: none;
     margin: auto 1rem;
     cursor: pointer;
+    width: 2rem;
+    aspect-ratio: 1/1;
+    background-image: url("/assets/icons/toggle-nav.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 
   &.is-active > &-icon {
@@ -128,7 +134,8 @@ $vnavbar-width: 12rem;
 
   &-mobile {
     @extend .is-mobile;
-    @extend .blur-bg;
+    background-color: $navbar-bg-color;
+    color: $navbar-text-color;
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -136,16 +143,13 @@ $vnavbar-width: 12rem;
     z-index: 5000000;
 
     position: fixed;
-    top: 6rem;
+    top: 0rem;
     left: 50%;
     transform: translateX(-50%);
     width: 100vw;
-    border-radius: 16px;
-    border: $accent-color solid 1px;
 
     & > .navbar-item {
       padding: 1rem 0.5rem;
-      border-top: $accent-color solid 1px;
       @extend .is-size-1;
     }
     & > .navbar-item-btn {

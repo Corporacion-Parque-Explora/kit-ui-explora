@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import ExampleCard from "./ExamplesCards";
 
 export const CardProjects = () => {
   const exampleCodeFontsInLine = ` <div className="cardProyects">
@@ -61,10 +60,6 @@ export const CardProjects = () => {
       </div>
       <br />
       <br />
-      <ExampleCard
-        exampleCode={exampleCodeFontsInLine}
-        language={"typescript"}
-      ></ExampleCard>
     </div>
   );
 };

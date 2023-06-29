@@ -1,7 +1,8 @@
-import Buttons from "@/main/components/modules/Buttons";
-import SeparatorTitle from "@/main/components/modules/SeparatorTitle";
+import Buttons from "@/main/components/modules/elements/Buttons";
+import Titles from "@/main/components/modules/elements/Titles";
 import React from "react";
 import MainLayout from "@/main/components/layouts/MainLayout";
+import Separator from "@/main/components/modules/elements/Separator";
 export default function Home() {
   const routes = [
     {
@@ -21,7 +22,8 @@ export default function Home() {
       }}
     >
       <Buttons />
-      <SeparatorTitle />
+      <Titles />
+      <Separator />
     </MainLayout>
   );
 }

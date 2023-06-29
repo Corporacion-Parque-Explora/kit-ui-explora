@@ -1,0 +1,23 @@
+.separator {
+  height: 1.5rem;
+  width: 40%;
+  margin: 1rem 0;
+
+  background-color: $red-2;
+
+  &.is-green {
+    background-color: $green-1;
+  }
+
+  &.is-yellow {
+    background-color: $yellow-3;
+  }
+
+  &.is-blue {
+    background-color: $blue-ee;
+  }
+
+  @include mediaMax(sm) {
+    width: 100%;
+  }
+}

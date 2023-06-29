@@ -1,4 +1,5 @@
 .container {
+  position: relative;
   width: 100%;
   padding: 0 1rem;
   margin-right: auto;
@@ -25,7 +26,62 @@
   }
 }
 
-.sanitizerStyles {
+.main-container {
+  position: relative;
+  width: 100%;
+  padding: 2rem 4rem;
+  padding-bottom: 7rem;
+  z-index: 1;
+  @include mediaMax(sm) {
+    padding: 2rem;
+  }
+}
+
+.spaced-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  padding: 4rem 0;
+  width: 70%;
+  margin: auto;
+}
+
+.two-columns-container {
+  column-count: 2;
+  column-gap: 2rem;
+}
+
+.centered-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 2rem;
+  flex-grow: 1;
+  min-height: 15rem;
+
+  & svg {
+    animation: up-dowm 0.6s ease-in-out infinite alternate;
+
+    &:nth-child(2) {
+      animation-delay: 0.3s;
+    }
+
+    &:nth-child(3) {
+      animation-delay: 0.5s;
+    }
+  }
+}
+
+.content {
   & p *,
   & p {
     @extend .is-size-3;
@@ -58,7 +114,7 @@
   }
 
   & h6 {
-    @extend .fs-6 !optional;
+    @extend .is-size-1 !optional;
   }
 
   & img {
@@ -66,10 +122,10 @@
   }
 
   & a {
-    color: $purple-1;
+    color: $primary-color;
 
     &:hover {
-      color: $yellow-p1;
+      color: $accent-color;
     }
   }
 
