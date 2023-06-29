@@ -48,32 +48,7 @@ export default function VNavbar({ button }) {
             {route.name}
           </Link>
         ))}
-        <button
-          className="navbar-icon is-mobile "
-          onClick={() => {
-            setNavbarOpen(!navbarOpen);
-          }}
-        ></button>
         <span className="navbar-space"></span>
-      </div>
-      <div
-        className="navbar-mobile-bg"
-        onClick={() => {
-          setNavbarOpen(false);
-        }}
-      ></div>
-      <div className="navbar-mobile ">
-        {routes.map((route, index) => (
-          <Link
-            key={index}
-            href={route.path}
-            className={`navbar-item ${
-              router?.pathname?.includes(route.path) ? "is-active" : ""
-            }`}
-          >
-            {route.name}
-          </Link>
-        ))}
       </div>
     </>
   );

@@ -26,52 +26,21 @@
   }
 
   & h3 {
-    color: $secondary-color;
     max-width: 38rem;
     padding: 1rem 0;
     padding-top: 3rem;
+    @extend .fs-3;
 
     @include mediaMax(sm) {
       max-width: 80vw;
     }
-
-    & span {
-      @extend .fs-3;
-      line-height: 1.5em;
-      background-color: rgba($primary-color, 0.6);
-      padding: 0 1rem;
-      -webkit-box-decoration-break: clone;
-      box-decoration-break: clone;
-
-      @include mediaMax(sm) {
-        font-size: 1.8em;
-      }
-    }
   }
-  &__logo {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding: 0.5rem 3rem 0.5rem 7rem;
-    background-image: url("/assets/fondos/franja-banner.png");
-    height: 10vh;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    & .image {
-      width: 100%;
-      height: 100% !important;
-    }
-
-    &.is-dark {
-      color: $primary-color;
-      background-image: url("/assets/fondos/franja-banner-dark.png");
-    }
+  & p {
+    max-width: 38rem;
   }
+
   &.is-primary {
-    background-color: rgba($primary-color, 1);
+    background-color: $primary-color;
     color: $primary-text-color;
   }
 }
@@ -136,31 +105,13 @@
         padding-top: 4rem;
         min-height: 11rem;
       }
-      & span {
-        @extend .fs-3;
-        line-height: 1.5em;
-        background-color: rgba($primary-color, 0.6);
-        padding: 0 1rem;
-        -webkit-box-decoration-break: clone;
-        box-decoration-break: clone;
-
-        @include mediaMax(xs) {
-          background-color: rgba($primary-color, 1);
-        }
-      }
     }
 
     & .subtitle {
       @extend .is-size-1;
       line-height: 1.5em;
-      max-width: 30rem;
+      width: 30rem;
       font-weight: 300;
-    }
-
-    & .icon-explora {
-      padding-top: 15rem;
-      color: #ff2d10;
-      margin: auto;
     }
   }
 }
@@ -172,4 +123,18 @@
   object-fit: cover;
   object-position: center;
   overflow: hidden;
+}
+
+.banner-basic {
+  @extend .main-container;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  padding-top: 10rem;
+  position: relative;
+  &-text {
+    @extend .fs-5;
+    max-width: 45rem;
+    white-space: pre-line;
+  }
 }

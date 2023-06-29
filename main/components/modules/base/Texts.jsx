@@ -1,6 +1,6 @@
 export default function Texts() {
   return (
-    <div className="item" id="texto">
+    <div className="item-box" id="texto">
       <div className="titles">
         <div className="title1">
           <h3 className="fs-5">Titulos</h3>

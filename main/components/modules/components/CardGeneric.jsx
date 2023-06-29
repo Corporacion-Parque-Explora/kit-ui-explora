@@ -22,7 +22,7 @@ export default function CardGeneric() {
 </div>`;
 
   return (
-    <div className="itemCards">
+    <div className="item-box">
       <div className="titles">
         <div className="title1">
           <h3 className="fs-5">Card Generic</h3>
