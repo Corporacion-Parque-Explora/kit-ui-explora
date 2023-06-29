@@ -15,6 +15,10 @@ export default function Home() {
       navRoutes={[
         { name: "Navbar", path: "#navbar" },
         { name: "Cards", path: "#cards" },
+        {
+          name: "Banners",
+          path: "#banners",
+        },
       ]}
     >
       <Banners />

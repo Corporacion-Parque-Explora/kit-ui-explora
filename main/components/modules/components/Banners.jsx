@@ -3,10 +3,10 @@ import Banner from "../../ui/Banner/Banner";
 export default function Banners() {
   return (
     <>
-      <div className="main-container">
+      <div className="main-container" id="banners">
         <div className="titles">
           <div className="">
-            <h3 className="title1 fs-5">Títulos</h3>
+            <h3 className="title1 fs-5">Banners</h3>
           </div>
         </div>
         <br />
