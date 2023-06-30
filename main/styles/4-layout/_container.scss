@@ -147,3 +147,33 @@
     width: 100% !important;
   }
 }
+
+.double-color-container {
+  min-height: 50vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    background-color: $primary-color;
+    z-index: -1;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 50%;
+    background-color: $accent-color;
+    z-index: -1;
+  }
+}

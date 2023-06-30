@@ -22,9 +22,6 @@ export default function Slider({ children }) {
           swiperRef.current = swiper;
         }}
         slidesPerView={"auto"}
-        pagination={{
-          clickable: true,
-        }}
         spaceBetween={20}
         className="simple-slider"
       >

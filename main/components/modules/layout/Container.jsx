@@ -24,18 +24,16 @@ export default function Containers() {
         </div>
         <br />
       </div>
-      <div className="">
-        <div className="main-container has-bg-white">
-          <div className="main-title">Contenedor principal</div>{" "}
-          <p>Tiene un padding general</p>
-          <br />
-          <pre className="code-container">
-            <code>
-              {`<div className="main-container">
+      <div className="main-container has-bg-white">
+        <div className="main-title">Contenedor principal</div>{" "}
+        <p>Tiene un padding general</p>
+        <br />
+        <pre className="code-container">
+          <code>
+            {`<div className="main-container">
 </div>`}
-            </code>
-          </pre>
-        </div>
+          </code>
+        </pre>
       </div>
       <div className="has-bg-accent">
         <br />
@@ -127,7 +125,7 @@ export default function Containers() {
           </code>
         </pre>
         <br />
-      </div>{" "}
+      </div>
       <div className="container has-bg-white">
         <div className="main-title">Formatear contenido</div>
         <div className="content">
@@ -163,6 +161,12 @@ export default function Containers() {
 </div>`}</code>
         </pre>
         <br />
+      </div>
+      <div className="main-container has-bg-white">
+        <div className="main-title">Contenedor con dos fondos</div>
+        <div className="double-color-container">
+          <div className=" fs-1 is-bold">Aquí va el contenido</div>
+        </div>
       </div>
     </div>
   );

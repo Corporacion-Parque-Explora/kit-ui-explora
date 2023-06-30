@@ -11,15 +11,11 @@ export default function Banner({ children }) {
   return (
     <Swiper
       slidesPerView={"auto"}
-      pagination={{
-        clickable: true,
-      }}
-      modules={[Pagination, Navigation]}
+      modules={[Navigation]}
       className="banner-slider"
       navigation={true}
       autoplay={{
         delay: 5000,
-        disableOnInteraction: false,
       }}
     >
       {arrayChildren.map((child, index) => (

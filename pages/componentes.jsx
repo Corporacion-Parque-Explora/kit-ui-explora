@@ -13,12 +13,12 @@ export default function Home() {
         title: "Componentes | Kit UI Explora",
       }}
       navRoutes={[
-        { name: "Navbar", path: "#navbar" },
-        { name: "Cards", path: "#cards" },
         {
           name: "Banners",
           path: "#banners",
         },
+        { name: "Navbar", path: "#navbar" },
+        { name: "Cards", path: "#cards" },
       ]}
     >
       <Banners />

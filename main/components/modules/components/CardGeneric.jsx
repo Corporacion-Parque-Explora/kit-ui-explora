@@ -31,7 +31,6 @@ export default function CardGeneric() {
       <hr></hr>
       <br />
       <br />
-      <br />
 
       <div className="cardGeneric">
         <a>
