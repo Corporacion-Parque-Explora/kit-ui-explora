@@ -167,6 +167,14 @@ export default function Containers() {
         <div className="double-color-container">
           <div className=" fs-1 is-bold">Aquí va el contenido</div>
         </div>
+        <br />
+        <pre className="code-container">
+          <code>
+            {`<div className="double-color-container">
+    <div className=" fs-1 is-bold">Aquí va el contenido</div>
+</div>`}
+          </code>
+        </pre>
       </div>
     </div>
   );

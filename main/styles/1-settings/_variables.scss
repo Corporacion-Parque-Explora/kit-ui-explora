@@ -44,16 +44,25 @@ $gray-8: #c3c3c3;
 $black-1: #000;
 $black-2: #44444a;
 
+$blue-in: #0c9bf0;
+$green-in: #6cd078;
+$yellow-in: #ffe243;
+
+$blue: $blue-in;
+$green: $green-2;
+$yellow: $yellow-2;
+$red: $red-3;
+
 $white: #fff;
 
 /* =====================
     * THEME COLORS *
 ===================== */
 
-$primary-color: $red-3;
+$primary-color: $red;
 $primary-text-color: $white;
-$secondary-color: $green-2;
-$accent-color: $yellow-2;
+$secondary-color: $green;
+$accent-color: $yellow;
 
 /* =====================
     * FONTS *
