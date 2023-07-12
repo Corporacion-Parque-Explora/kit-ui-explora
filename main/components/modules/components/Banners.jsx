@@ -19,13 +19,15 @@ export default function Banners() {
       </p>
       <br />
       <Banner>
-        <div className="banner-slide is-blue">
-          <h3>Banner principal</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur
-            eos ipsum odio minima porro, perferendis accusantium magni natus
-            voluptatum aperiam.
-          </p>
+        <div className="banner-slide-content">
+          <div className="banner-slide is-blue">
+            <h3>Banner principal</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Aspernatur eos ipsum odio minima porro, perferendis accusantium
+              magni natus voluptatum aperiam.
+            </p>
+          </div>
         </div>
         <div className="banner-simple-slide has-bg-primary">
           <div className="banner-simple-slide-col-1">
@@ -115,12 +117,32 @@ export default function Banners() {
       <div className="main-title">Banner principal</div>
       <Banner>
         <div className="banner-slide is-blue">
+          <div className="banner-slide-content">
+            <h3>Banner principal</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Aspernatur eos ipsum odio minima porro, perferendis accusantium
+              magni natus voluptatum aperiam.
+            </p>
+            <div className="banner-info-btns">
+              <a href="">Sección 1</a>
+              <a href="">Sección 2</a>
+              <a href="">Sección 3</a>
+            </div>
+          </div>
+        </div>
+      </Banner>
+      <pre className="code-container">
+        <code>
+          {`
+  <Banner>
+      <div className="banner-slide is-blue">
+        <div className="banner-slide-content">
           <h3>Banner principal</h3>
           <p>
-            {" "}
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur
-            eos ipsum odio minima porro, perferendis accusantium magni natus
-            voluptatum aperiam.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Aspernatur eos ipsum odio minima porro, perferendis accusantium
+            magni natus voluptatum aperiam.
           </p>
           <div className="banner-info-btns">
             <a href="">Sección 1</a>
@@ -128,28 +150,8 @@ export default function Banners() {
             <a href="">Sección 3</a>
           </div>
         </div>
-      </Banner>
-      <pre className="code-container">
-        <code>
-          {`
-          <div className="banner-slide is-primary">
-            <h3>Banner principal</h3>
-            <p>
-              {" "}
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Aspernatur eos ipsum odio minima porro, perferendis accusantium
-              magni natus voluptatum aperiam.
-            </p>
-          </div>
-          <div className="banner-slide is-blue">
-            <h3>Slide 2</h3>
-            <p>
-              {" "}
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Aspernatur eos ipsum odio minima porro, perferendis accusantium
-              magni natus voluptatum aperiam.
-            </p>
-          </div>`}
+      </div>
+    </Banner>`}
         </code>
       </pre>
       <br />
@@ -223,6 +225,10 @@ export default function Banners() {
         interior cualquiera de los otros slides
       </p>
       <br />
+      <code>npm i react-player</code>
+      <br />
+      <br />
+      <br />
       <Banner>
         <div className={"banner-video"}>
           <div className={"banner-video-container"}>
@@ -237,7 +243,7 @@ export default function Banners() {
                   loop={true}
                   muted={true}
                   height="auto"
-                  width="auto"
+                  width="100%"
                 />
               )
             }
@@ -262,11 +268,7 @@ export default function Banners() {
       <pre className="code-container">
         <code>
           {` 
-        <div className={"banner-video"}
-            style={{
-              height: "110vh",
-            }}
-          >
+        <div className={"banner-video"} >
             <div className={"banner-video-container"}>
               {
                 /* data.video */ true && (
@@ -279,7 +281,7 @@ export default function Banners() {
                     loop={true}
                     muted={true}
                     height="auto"
-                    width="auto"
+                    width="100%"
                   />
                 )
               }

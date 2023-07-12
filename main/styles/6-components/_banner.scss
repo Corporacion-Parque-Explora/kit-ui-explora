@@ -25,6 +25,7 @@
 }
 
 .banner-slide {
+  @extend .container;
   background-size: cover;
   background-position: top center;
   min-width: 100vw;
@@ -51,23 +52,25 @@
     }
   }
 
-  & h3 {
-    max-width: 38rem;
-    padding: 1rem 0;
-    padding-top: 3rem;
-    @extend .fs-3;
-
-    @include mediaMax(sm) {
-      max-width: 80vw;
-    }
-  }
-  & p {
-    max-width: 38rem;
-  }
-
   &.is-primary {
     background-color: $primary-color;
     color: $primary-text-color;
+  }
+  &-content {
+    @extend .container;
+    & h3 {
+      max-width: 38rem;
+      padding: 1rem 0;
+      padding-top: 3rem;
+      @extend .fs-3;
+
+      @include mediaMax(sm) {
+        max-width: 80vw;
+      }
+    }
+    & p {
+      max-width: 38rem;
+    }
   }
 }
 
@@ -173,6 +176,8 @@
   flex-direction: column;
   justify-content: center;
   color: $white;
+  overflow: hidden;
+  margin-bottom: 3rem;
 
   &-container {
     position: absolute;

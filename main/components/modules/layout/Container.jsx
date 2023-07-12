@@ -176,6 +176,51 @@ export default function Containers() {
           </code>
         </pre>
       </div>
+      <div className="main-container has-bg-white">
+        <div className="main-title">Contenedor para cards simples</div>
+
+        <div className="simple-cards-box">
+          <div className="is-blue"></div>
+          <div className="is-red"></div>
+          <div className="is-green"></div>
+          <div className="is-yellow"></div>
+          <div className="is-blue"></div>
+          <div className="is-red"></div>
+          <div className="is-green"></div>
+          <div className="is-yellow"></div>
+          <div className="is-blue"></div>
+          <div className="is-red"></div>
+          <div className="is-green"></div>
+          <div className="is-blue"></div>
+          <div className="is-red"></div>
+          <div className="is-green"></div>
+          <div className="is-yellow"></div>
+          <div className="is-blue"></div>
+        </div>
+        <br />
+        <pre className="code-container">
+          <code>
+            {`<div className="simple-cards-box">
+          <div className="is-blue"></div>
+          <div className="is-red"></div>
+          <div className="is-green"></div>
+          <div className="is-yellow"></div>
+          <div className="is-blue"></div>
+          <div className="is-red"></div>
+          <div className="is-green"></div>
+          <div className="is-yellow"></div>
+          <div className="is-blue"></div>
+          <div className="is-red"></div>
+          <div className="is-green"></div>
+          <div className="is-blue"></div>
+          <div className="is-red"></div>
+          <div className="is-green"></div>
+          <div className="is-yellow"></div>
+          <div className="is-blue"></div>
+        </div>`}
+          </code>
+        </pre>
+      </div>
     </div>
   );
 }
